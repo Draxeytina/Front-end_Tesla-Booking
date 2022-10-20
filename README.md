@@ -14,7 +14,7 @@
 
 ## Getting Started 
 - To get a local copy of this project clone this repository or download the Zip folder: 
-git clone https://github.com/Gopxfs/<PROJECT NAME>.git 
+git clone https://github.com/Draxeytina/Back-end_Tesla-Booking.git 
 
 - To get started, In the root directory run: 
 gem install bundler 
@@ -42,4 +42,4 @@ To edit this project:
 Give a :star: if you like my project! 
 
 ## :pencil: License
-This project is [MIT](https://github.com/Gopxfs/<PROJECT NAME>/blob/main/LICENSE) licensed. 
+This project is [MIT](https://github.com/Gopxfs/Back-end_Tesla-Booking/blob/main/LICENSE) licensed. 
