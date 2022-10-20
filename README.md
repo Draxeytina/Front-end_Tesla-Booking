@@ -46,6 +46,13 @@ To edit this project:
 
 - LinkedIn: [Francisco Borja](https://www.linkedin.com/in/francisco-borja-lobato/)
 
+👤 **Fabien**
+
+- GitHub: [![GitHub Badge](https://img.shields.io/badge/-fibini-white?logo=GitHub&logoColor=181717&style=plastic)](https://github.com/fibini)
+
+- Twitter: [![Twitter Badge](https://img.shields.io/badge/-Onenewpage1-white?logo=Twitter&logoColor=1DA1F2&style=plastic)](https://twitter.com/Onenewpage1)
+
+- LinkedIn: [![LinkedIn Badge](https://img.shields.io/badge/-FabienBrathwaite-white?logo=LinkedIn&logoColor=1DA1F2&style=plastic)](https://www.linkedin.com/in/fabien-brathwaite/)
 ## :star2: Show your support 
 Give a :star: if you like my project! 
 
