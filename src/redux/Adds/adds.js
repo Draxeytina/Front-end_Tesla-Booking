@@ -1,4 +1,4 @@
-const url = 'http://localhost:3000/users';
+const url = 'http://localhost:3000/cars';
 const GETCARS = 'GETCARS';
 const ADDCAR = 'ADDCAR';
 
@@ -26,21 +26,21 @@ export const AddCar = (id) => ({
 });
 
 export const FetchCars = () => (dispatch) => {
+  const List = [];
   fetch(url)
     .then((res) => res.json())
     .then((result) => {
       const Data = Object.entries(result);
       Data.forEach((element) => {
         List.push({
-          id: element[0].id,
           model: element[0].model,
           color: element[0].color,
-          img: element[0].img,
+          img: element[0].image,
           range: element[0].range,
-          motor: element[0].motor,
-          acceleration: element[0].acceleration,
-          price: element[0].price,
-          duration: element[0].duration,
+          motor: element[0].motor_type,
+          acceleration: element[0].acceleration_time,
+          price: element[0].booking_price,
+          duration: element[0].booking_duration,
         });
       });
       dispatch(GetCar(List));
