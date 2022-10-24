@@ -1,6 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { FetchCars, AddCar } from '../../redux/actions/carActions';
-import Car from '../Car/Car';
+import { FetchCars, AddCar } from '../../redux/Adds/adds';
 
 export default function Adds() {
   const dispatch = useDispatch();
@@ -11,21 +10,19 @@ export default function Adds() {
   };
 
   return (
-    <div className="adds">
+    <div>
+      <button type="button" onClick={() => dispatch(FetchCars())}>Fetch Cars</button>
       {cars.map((car) => (
-        <Car
-          key={car.id}
-          id={car.id}
-          model={car.model}
-          color={car.color}
-          img={car.img}
-          range={car.range}
-          motor={car.motor}
-          acceleration={car.acceleration}
-          price={car.price}
-          duration={car.duration}
-          handleClick={handleClick}
-        />
+        <div key={car.id}>
+          <h2>{car.model}</h2>
+          <p>{car.color}</p>
+          <p>{car.range}</p>
+          <p>{car.motor}</p>
+          <p>{car.acceleration}</p>
+          <p>{car.price}</p>
+          <p>{car.duration}</p>
+          <button type="button" onClick={() => handleClick(car.id)}>Add to cart</button>
+        </div>
       ))}
     </div>
   );
