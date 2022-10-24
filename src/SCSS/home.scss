@@ -1,66 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 .heading-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 .arrows {
-    display: flex;
-    justify-content: center;
-    margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
 }
 
 .car-name {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .icons {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 4rem;
 }
 
 @media only screen and (min-width: 678px) {
-    .arrows {
-        width: 100%;
-        position: absolute;
-        display: flex;
-        justify-content: space-between;
-        top: 50%;
-    }
+  .arrows {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+  }
 
-    .content {
-        position: relative;
-    }
+  .content {
+    position: relative;
+  }
 
-    .slides-container{
-        padding: 0 30px;
-    }
+  .slides-container {
+    padding: 0 30px;
+  }
 
-    .button-boxright {
-        display: flex;
-        justify-content: flex-end;
-        height: 50px;
-        width: 90px;
-        background-color: #98c00d;
-        border-radius: 25px 0 0 25px
-    }
+  .button-boxright {
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    width: 90px;
+    background-color: #98c00d;
+    border-radius: 25px 0 0 25px;
+  }
 
-    .button-boxleft {
-        display: flex;
-        justify-content: flex-start;
-        height: 50px;
-        width: 90px;
-        background-color: #98c00d;
-        border-radius: 0px 25px 25px 0px
-    }
+  .button-boxleft {
+    display: flex;
+    justify-content: flex-start;
+    height: 50px;
+    width: 90px;
+    background-color: #98c00d;
+    border-radius: 0 25px 25px 0;
+  }
 
-    p {
-        color: #c4c4c4;
-    }
+  p {
+    color: #c4c4c4;
+  }
 }
