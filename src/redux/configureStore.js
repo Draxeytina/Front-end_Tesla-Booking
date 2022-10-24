@@ -3,7 +3,6 @@ import thunk from 'redux-thunk';
 import logger from 'redux-logger';
 import carReducer from './Adds/adds';
 
-
 const RootReducer = combineReducers({
   adds: carReducer,
 });
