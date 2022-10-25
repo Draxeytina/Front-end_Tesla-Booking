@@ -38,6 +38,7 @@ nav.green {
 
 .link {
   color: $text-grey;
+  font-family: $heading-font;
 }
 
 .side-bar .link {
@@ -80,7 +81,7 @@ nav.green {
   nav {
     position: fixed;
     background-color: white;
-    max-width: 100vw;
+    max-width: 71vw;
     height: 100vh;
     overflow: hidden auto;
     box-shadow: 0 0 500px 100px $lime;
@@ -90,8 +91,9 @@ nav.green {
 
   nav img {
     margin-bottom: 10px;
-    width: 90%;
-    height: 70%;
+    margin-left:57px;
+    width: 50%;
+    height: 50%;
     padding-top: 49px;
   }
 
@@ -102,6 +104,14 @@ nav.green {
   nav.hidden {
     box-shadow: none;
     width: 0;
+  }
+
+  .side-bar {
+    margin-left: 1rem;
+  }
+
+  .side-bar .link {
+    margin-bottom: -0.5rem;
   }
 
   .burger-div {
