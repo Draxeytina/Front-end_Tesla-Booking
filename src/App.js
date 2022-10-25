@@ -17,9 +17,9 @@ function App() {
         <Routes>
           <>
             <Route exact path="/" element={<Home />} />
+            <Route exact path="/adds" element={<Adds />} />
             {/* <Route path="/reservations/create" element={<Reserve />} /> */}
             <Route path="/users/:id/reserved_cars" element={<Reservations />} />
-            <Route exact path="/adds" element={<Adds />} />
             {/* <Route path="/cars/create" element={<New />} /> */}
             {/* <Route path="/cars/:id" element={<Delete />} /> */}
             {/* <Route path="/*" element={<Navigate to="/" replace />} /> */}

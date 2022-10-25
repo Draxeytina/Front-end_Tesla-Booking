@@ -3,7 +3,6 @@ import Button from '@mui/material/Button';
 
 export default function Adds() {
   const handleSubmit = async (e) => {
-    console.log("I'm here");
     e.preventDefault();
     const response = await fetch('http://127.0.0.1:3000/cars/create', {
       method: 'POST',
@@ -19,7 +18,13 @@ export default function Adds() {
         duration: e.target.booking_duration.value,
       }),
     });
-    console.log('response', response);
+    response.json();
+
+    if (response.status === 201) {
+      window.location.reload();
+    }
+
+    return response;
   };
 
   return (
