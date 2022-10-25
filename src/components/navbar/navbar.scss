@@ -1,0 +1,150 @@
+@import '../../assets/base.scss';
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: $dark-grey 1px solid;
+  z-index: 100;
+  min-height: 100vh;
+  max-width: 20vw;
+  
+}
+
+footer {
+  margin: 2rem 0;
+  row-gap: 5px;
+}
+
+small {
+  font-size: small;
+  color: $dark-grey;
+}
+
+nav img {
+  margin: 10px 0;
+  width: 100%;
+}
+
+nav.green {
+  background-color: #fff;
+}
+
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.side-bar .link {
+  border-radius: 0;
+  margin-bottom: 0.25rem;
+}
+
+.active,
+.green {
+  background-color: $lime;
+  color: white;
+}
+
+.white {
+  background-color: white;
+  color: $lime;
+}
+
+.burger-div {
+  display: none;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  color: $dark-grey;
+  width: 100%;
+}
+
+.link.wrap {
+  padding: 0.5rem 1rem;
+}
+
+.link.red {
+  margin-top: 1rem;
+}
+
+.link {
+  color: $text-grey;
+}
+
+@media (max-width: 768px) {
+  nav {
+    position: fixed;
+    background-color: white;
+    max-width: 100vw;
+    height: 100vh;
+    overflow: hidden auto;
+    box-shadow: 0 0 500px 100px $lime;
+    z-index: 100;
+    transition: all 0.5s ease-in-out;
+  }
+
+  nav img {
+    margin-bottom: 10px;
+    width: 90%;
+    height: 70%;
+    padding-top: 49px;
+  }
+
+  footer {
+    margin: 2rem 0;
+  }
+
+  nav.hidden {
+    box-shadow: none;
+    width: 0;
+  }
+
+  .burger-div {
+    display: block;
+    position: fixed;
+    border: none;
+    z-index: 150;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 60%;
+  }
+
+  .burger {
+    display: block;
+    margin: 0.25rem;
+    width: 2rem;
+    height: 5px;
+    border-radius: 5px;
+    background-color: $dark-grey;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .hidden .burger .top {
+    transform: rotate(45deg) translate(7px, 5px) skew(50deg) scale(1.3, 0.7);
+    background-color: #fff;
+  }
+
+  .invisible {
+    background-color: transparent;
+  }
+
+  .hidden .burger .bottom {
+    transform: rotate(-45deg) translate(7px, -5px) skew(50deg) scale(1.3, 0.7);
+    background-color: #fff;
+  }
+
+  .social-icons {
+    color: $dark-grey;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: 22px;
+  }
+}
