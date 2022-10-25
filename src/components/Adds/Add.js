@@ -3,7 +3,6 @@ import './Add.css';
 
 function Add(props) {
   const {
-    id,
     model,
     color,
     img,
@@ -30,7 +29,6 @@ function Add(props) {
 }
 
 Add.propTypes = {
-  id: PropTypes.number.isRequired,
   model: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
   img: PropTypes.string.isRequired,

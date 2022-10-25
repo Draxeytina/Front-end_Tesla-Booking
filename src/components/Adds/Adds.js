@@ -1,29 +1,74 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { FetchCars, AddCar } from '../../redux/Adds/adds';
+import TextField from '@material-ui/core/TextField';
 
 export default function Adds() {
   const dispatch = useDispatch();
   const cars = useSelector((state) => state.cars);
 
-  const handleClick = (id) => {
-    dispatch(AddCar(id));
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    dispatch(FetchCars());
   };
 
   return (
     <div>
-      <button type="button" onClick={() => dispatch(FetchCars())}>Fetch Cars</button>
-      {cars.map((car) => (
-        <div key={car.id}>
-          <h2>{car.model}</h2>
-          <p>{car.color}</p>
-          <p>{car.range}</p>
-          <p>{car.motor}</p>
-          <p>{car.acceleration}</p>
-          <p>{car.price}</p>
-          <p>{car.duration}</p>
-          <button type="button" onClick={() => handleClick(car.id)}>Add to cart</button>
-        </div>
-      ))}
+      <form
+      onSubmit={handleSubmit}
+      id="form"
+      autoComplete="off"
+      >
+        <TextField
+          id="standard-basic"
+          label="Standard"
+          type="text"
+          name="model"
+          placeholder="Model"
+        />
+        <TextField
+          id="standard-basic"
+          label="Standard"
+          type="text"
+          name="color"
+          placeholder="Color"
+        />
+        <TextField
+          id="standard-basic"
+          label="Standard"
+          type="text"
+          name="range"
+          placeholder="Range"
+        />
+        <TextField
+          id="standard-basic"
+          label="Standard"
+          type="text"
+          name="motor"
+          placeholder="Motor"
+        />
+        <TextField
+          id="standard-basic"
+          label="Standard"
+          type="text"
+          name="acceleration"
+          placeholder="Acceleration"
+        />
+        <TextField
+          id="standard-basic"
+          label="Standard"
+          type="text"
+          name="price"
+          placeholder="Price"
+        />
+        <TextField
+          id="standard-basic"
+          label="Standard"
+          type="text"
+          name="duration"
+          placeholder="Duration"
+        />
+        <button type="submit">Submit</button>
+      </form>
     </div>
   );
 }

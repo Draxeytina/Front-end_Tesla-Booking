@@ -1,12 +1,12 @@
-import { combineReducers, createStore, applyMiddleware } from 'redux';
-import thunk from 'redux-thunk';
-import logger from 'redux-logger';
-import carReducer from './Adds/adds';
+import { configureStore } from '@reduxjs/toolkit';
+import carsReducer from './cars/cars';
+import addReducer from './Adds/adds';
 
-const RootReducer = combineReducers({
-  adds: carReducer,
+const store = configureStore({
+  reducer: {
+    cars: carsReducer,
+    add: addReducer,
+  },
 });
-
-const store = createStore(RootReducer, applyMiddleware(thunk, logger));
 
 export default store;

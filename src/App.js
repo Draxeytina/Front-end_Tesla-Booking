@@ -1,15 +1,14 @@
+import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import './App.css';
+import Home from './components/Home';
 import Adds from './components/Adds/Adds';
 
-function App() {
-  return (
-    <div>
-      <Routes>
-        <Route path="/adds" element={<Adds />} />
-      </Routes>
-    </div>
-  );
-}
-
+const App = () => (
+  <>
+    <Routes>
+      <Route exact path="/" element={<Home />} />
+      <Route exact path="/adds" element={<Adds />} />
+    </Routes>
+  </>
+);
 export default App;
