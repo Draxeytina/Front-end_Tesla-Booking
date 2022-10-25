@@ -30,17 +30,17 @@ export const FetchCars = () => (dispatch) => {
   fetch(url)
     .then((res) => res.json())
     .then((result) => {
-      const Data = Object.entries(result);
+      const Data = result;
       Data.forEach((element) => {
         List.push({
-          model: element[0].model,
-          color: element[0].color,
-          img: element[0].image,
-          range: element[0].range,
-          motor: element[0].motor_type,
-          acceleration: element[0].acceleration_time,
-          price: element[0].booking_price,
-          duration: element[0].booking_duration,
+          model: element.model,
+          color: element.color,
+          img: element.image,
+          range: element.range,
+          motor: element.motor_type,
+          acceleration: element.acceleration_time,
+          price: element.booking_price,
+          duration: element.booking_duration,
         });
       });
       dispatch(GetCar(List));
