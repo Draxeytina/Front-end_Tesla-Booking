@@ -12,10 +12,10 @@ export default function Adds() {
         color: e.target.color.value,
         image: e.target.image.value,
         range: e.target.range.value,
-        motor: e.target.motor_type.value,
-        acceleration: e.target.acceleration_time.value,
-        price: e.target.booking_price.value,
-        duration: e.target.booking_duration.value,
+        motor_type: e.target.motor_type.value,
+        acceleration_time: e.target.acceleration_time.value,
+        booking_price: e.target.booking_price.value,
+        booking_duration: e.target.booking_duration.value,
       }),
     });
     response.json();
@@ -62,7 +62,7 @@ export default function Adds() {
           id="standard-basic"
           label="Range"
           variant="outlined"
-          type="text"
+          type="integer"
           name="range"
           placeholder="Range"
         />
@@ -78,7 +78,7 @@ export default function Adds() {
           id="standard-basic"
           label="Acceleration"
           variant="outlined"
-          type="text"
+          type="number"
           name="acceleration_time"
           placeholder="Acceleration"
         />
@@ -86,7 +86,7 @@ export default function Adds() {
           id="standard-basic"
           label="Price"
           variant="outlined"
-          type="text"
+          type="number"
           name="booking_price"
           placeholder="Price"
         />
@@ -94,7 +94,7 @@ export default function Adds() {
           id="standard-basic"
           label="Duration"
           variant="outlined"
-          type="text"
+          type="integer"
           name="booking_duration"
           placeholder="Duration"
         />
@@ -103,6 +103,7 @@ export default function Adds() {
           label="Description"
           multiline
           rows={4}
+          type="text"
         />
         <Button type="submit" variant="contained" color="primary">Submit</Button>
       </form>
