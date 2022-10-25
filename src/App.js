@@ -4,6 +4,7 @@ import {
 } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import Reservations from './components/myReservations/Reservations';
+import Home from './components/Home';
 import './App.css';
 import './App.scss';
 
@@ -14,7 +15,7 @@ function App() {
         <Navbar />
         <Routes>
           <>
-            {/* <Route path="/cars" element={<Main />} /> */}
+            <Route exact path="/" element={<Home />} />
             {/* <Route path="/reservations/create" element={<Reserve />} /> */}
             <Route path="/users/:id/reserved_cars" element={<Reservations />} />
             {/* <Route path="/cars/create" element={<New />} /> */}
