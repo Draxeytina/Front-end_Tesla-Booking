@@ -4,6 +4,7 @@ import {
 } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import Reservations from './components/myReservations/Reservations';
+import ReserveForm from './components/Reserve Form/ReserveForm';
 import Home from './components/Home';
 import './App.css';
 import './App.scss';
@@ -16,7 +17,7 @@ function App() {
         <Routes>
           <>
             <Route exact path="/" element={<Home />} />
-            {/* <Route path="/reservations/create" element={<Reserve />} /> */}
+            <Route path="/reserve" element={<ReserveForm />} />
             <Route path="/users/:id/reserved_cars" element={<Reservations />} />
             {/* <Route path="/cars/create" element={<New />} /> */}
             {/* <Route path="/cars/:id" element={<Delete />} /> */}
