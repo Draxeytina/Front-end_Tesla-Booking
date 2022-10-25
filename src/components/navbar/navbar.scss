@@ -97,7 +97,7 @@ nav.green {
   }
 
   footer {
-    margin: 2rem 0;
+    margin: 2rem 0 12px 0;
   }
 
   nav.hidden {
@@ -126,7 +126,7 @@ nav.green {
     transition: all 0.5s ease-in-out;
   }
 
-  .hidden .burger .top {
+  .hidden .burger.top {
     transform: rotate(45deg) translate(7px, 5px) skew(50deg) scale(1.3, 0.7);
     background-color: #fff;
   }
@@ -135,7 +135,7 @@ nav.green {
     background-color: transparent;
   }
 
-  .hidden .burger .bottom {
+  .hidden .burger.bottom {
     transform: rotate(-45deg) translate(7px, -5px) skew(50deg) scale(1.3, 0.7);
     background-color: #fff;
   }
