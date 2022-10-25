@@ -8,7 +8,6 @@ nav {
   z-index: 100;
   min-height: 100vh;
   max-width: 20vw;
-  
 }
 
 footer {
@@ -35,6 +34,10 @@ nav.green {
   flex-direction: column;
   text-align: left;
   margin-left: 1rem;
+}
+
+.link {
+  color: $text-grey;
 }
 
 .side-bar .link {
@@ -71,10 +74,6 @@ nav.green {
 
 .link.red {
   margin-top: 1rem;
-}
-
-.link {
-  color: $text-grey;
 }
 
 @media (max-width: 768px) {
