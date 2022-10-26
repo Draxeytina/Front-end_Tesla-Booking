@@ -25,6 +25,11 @@
   margin-top: 4rem;
 }
 
+img {
+  width: 360px;
+  height: 300px;
+}
+
 @media only screen and (min-width: 678px) {
   .arrows {
     width: 100%;
@@ -40,6 +45,7 @@
 
   .slides-container {
     padding: 0 30px;
+    width: 50%;
   }
 
   .button-boxright {
@@ -62,5 +68,10 @@
 
   p {
     color: #c4c4c4;
+  }
+
+  img {
+    width: 360px;
+    height: 300px;
   }
 }
