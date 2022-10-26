@@ -16,6 +16,7 @@ export default function Adds() {
         acceleration_time: e.target.acceleration_time.value,
         booking_price: e.target.booking_price.value,
         booking_duration: e.target.booking_duration.value,
+        description: e.target.description.value,
       }),
     });
     response.json();
