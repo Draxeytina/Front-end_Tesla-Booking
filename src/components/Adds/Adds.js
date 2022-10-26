@@ -43,6 +43,7 @@ export default function Adds() {
           type="text"
           name="model"
           placeholder="Model"
+          required
         />
         <TextField
           id="standard-basic"
@@ -51,6 +52,7 @@ export default function Adds() {
           type="text"
           name="color"
           placeholder="Color"
+          required
         />
         <TextField
           id="standard-basic"
@@ -59,6 +61,7 @@ export default function Adds() {
           type="text"
           name="image"
           placeholder="https://"
+          required
         />
         <TextField
           id="standard-basic"
@@ -67,6 +70,7 @@ export default function Adds() {
           type="integer"
           name="range"
           placeholder="Range"
+          required
         />
         <TextField
           id="standard-basic"
@@ -74,7 +78,8 @@ export default function Adds() {
           variant="outlined"
           type="text"
           name="motor_type"
-          placeholder="Motor"
+          placeholder="Motor type"
+          required
         />
         <TextField
           id="standard-basic"
@@ -82,7 +87,8 @@ export default function Adds() {
           variant="outlined"
           type="decimal"
           name="acceleration_time"
-          placeholder="Acceleration"
+          placeholder="Acceleration time"
+          required
         />
         <TextField
           id="standard-basic"
@@ -90,7 +96,8 @@ export default function Adds() {
           variant="outlined"
           type="decimal"
           name="booking_price"
-          placeholder="Price"
+          placeholder="Booking price"
+          required
         />
         <TextField
           id="standard-basic"
@@ -98,7 +105,8 @@ export default function Adds() {
           variant="outlined"
           type="integer"
           name="booking_duration"
-          placeholder="Duration"
+          placeholder="Booking duration"
+          required
         />
         <TextField
           id="outlined-multiline-static"
@@ -107,6 +115,8 @@ export default function Adds() {
           rows={4}
           type="text"
           name="description"
+          placeholder="Description"
+          required
         />
         <Button type="submit" variant="contained" color="primary">Submit</Button>
       </form>
