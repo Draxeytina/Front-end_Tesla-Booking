@@ -11,6 +11,36 @@
   display: flex;
   justify-content: center;
   margin-top: 3rem;
+
+  .button-boxleft,
+  .button-boxright {
+    button {
+      background-color: rgba(255, 0, 0, 0);
+      background-size: 15px;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: 0;
+      width: 30px;
+
+      svg {
+        display: none;
+      }
+    }
+  }
+
+  .button-boxleft {
+    button {
+      margin-right: 12px;
+      background-image: url('https://i.imgur.com/PKGqNgn.png');
+    }
+  }
+
+  .button-boxright {
+    button {
+      margin-left: 12px;
+      background-image: url('https://i.imgur.com/BCjKg6S.png');
+    }
+  }
 }
 
 .car-name {
@@ -50,7 +80,7 @@ img {
 
   .button-boxright {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     height: 50px;
     width: 90px;
     background-color: #98c00d;
@@ -59,7 +89,7 @@ img {
 
   .button-boxleft {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     height: 50px;
     width: 90px;
     background-color: #98c00d;
@@ -73,5 +103,11 @@ img {
   img {
     width: 360px;
     height: 300px;
+  }
+}
+
+@media only screen and (max-width: 678px) {
+  .slides {
+    display: none;
   }
 }
