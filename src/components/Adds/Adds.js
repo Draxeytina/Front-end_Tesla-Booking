@@ -29,6 +29,7 @@ export default function Adds() {
 
   return (
     <div>
+      <h1>Add New Car</h1>
       <form
         id="form"
         autoComplete="off"
@@ -68,7 +69,7 @@ export default function Adds() {
         />
         <TextField
           id="standard-basic"
-          label="Motor"
+          label="Motor type"
           variant="outlined"
           type="text"
           name="motor_type"
@@ -76,23 +77,23 @@ export default function Adds() {
         />
         <TextField
           id="standard-basic"
-          label="Acceleration"
+          label="Acceleration time"
           variant="outlined"
-          type="number"
+          type="decimal"
           name="acceleration_time"
           placeholder="Acceleration"
         />
         <TextField
           id="standard-basic"
-          label="Price"
+          label="Booking price"
           variant="outlined"
-          type="number"
+          type="decimal"
           name="booking_price"
           placeholder="Price"
         />
         <TextField
           id="standard-basic"
-          label="Duration"
+          label="Booking duration"
           variant="outlined"
           type="integer"
           name="booking_duration"
@@ -104,6 +105,7 @@ export default function Adds() {
           multiline
           rows={4}
           type="text"
+          name="description"
         />
         <Button type="submit" variant="contained" color="primary">Submit</Button>
       </form>
