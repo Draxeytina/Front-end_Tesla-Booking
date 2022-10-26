@@ -19,7 +19,7 @@ function App() {
           <>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/cars/create" element={<Adds />} />
-            <Route path="/reserve" element={<ReserveForm />} />
+            {/* <Route path="/reserve" element={<ReserveForm />} /> */}
             <Route path="/users/:id/reserved_cars" element={<Reservations />} />
             {/* <Route path="/cars/create" element={<New />} /> */}
             <Route exact path="/cars/:id" element={<Details />} />
