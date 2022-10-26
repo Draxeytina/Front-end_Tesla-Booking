@@ -33,7 +33,7 @@ const Reserve = () => {
   };
 
   return (
-    <div id="reservation-form">
+    <section id="reservation-form">
       <h2> RESERVATION FORM </h2>
       <form onSubmit={(e) => { createReservation(e); }}>
         <select name="model" id="reservation-form__model" form="reserve-car">
@@ -42,7 +42,7 @@ const Reserve = () => {
         <input type="date" name="reservationDate" id="reservation-form__booking-date" min={today} max="2030-12-31" required />
         <button type="submit">RESERVE</button>
       </form>
-    </div>
+    </section>
   );
 };
 
