@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Routes, Route,
+  BrowserRouter as Router, Routes, Route,
 } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import Reservations from './components/myReservations/Reservations';
@@ -19,7 +19,7 @@ function App() {
           <>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/cars/create" element={<Adds />} />
-            {/* <Route path="/reservations/create" element={<Reserve />} /> */}
+            <Route path="/reserve" element={<ReserveForm />} />
             <Route path="/users/:id/reserved_cars" element={<Reservations />} />
             {/* <Route path="/cars/create" element={<New />} /> */}
             {/* <Route path="/cars/:id" element={<Delete />} /> */}
