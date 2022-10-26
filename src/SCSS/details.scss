@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+.details-image {
+  width: 300px;
+  height: 280px;
+}
+
+.details-container {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.button-container {
+  display: flex;
+  height: 50px;
+  width: 10rem;
+  background-color: #98c00d;
+  border-radius: 25px 25px 25px 25px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.reserve-button {
+  background: none;
+  color: white;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.color-container {
+  display: none;
+}
+
+@media only screen and (min-width: 678px) {
+  .details-container {
+    display: flex;
+    gap: 10rem;
+    margin-left: 3rem;
+  }
+
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .details-model {
+    font-size: 30px;
+  }
+
+  .d-tails {
+    font-size: 15px;
+    color: #202020;
+  }
+
+  .details-image {
+    width: 800px;
+    height: 700px;
+  }
+
+  .color-container {
+    display: flex;
+  }
+
+  .color-text {
+    align-self: center;
+    color: #202020;
+  }
+
+  .color-wheel {
+    width: 150px;
+    height: 150px;
+  }
+}
