@@ -69,15 +69,20 @@
 @media only screen and (min-width: 768px) {
   .details-container {
     display: flex;
-    margin-left: 3rem;
     margin-top: 7rem;
     width: 100%;
+    
+    * {
+      overflow: hidden;
+    }
   }
 
   .info-container {
     width: 100%;
-    margin-left: auto;
+    max-width: 333px;
+    margin-left: 25px;
     margin-right: 75px;
+    align-self: flex-start;
   }
 
   .button-container {
@@ -99,6 +104,9 @@
 
   .details-image {
     margin-left: 10rem;
+    width: 100%;
+    height: auto;
+    margin-top: -75px;
   }
 
   .color-container {
@@ -153,6 +161,24 @@
       svg {
         display: none;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .details-image {
+    width: 66%;
+    height: 100%;
+    align-self: center;
+  }
+
+  .info-container {
+    width: 25%;
+
+    * {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
   }
 }
