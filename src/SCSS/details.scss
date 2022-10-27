@@ -7,8 +7,7 @@
 }
 
 .details-container {
-  margin-top: 30px;
-  margin-left: 30px;
+  width: 90%;
 }
 
 .info-container {
@@ -55,6 +54,11 @@
   justify-content: space-between;
   height: 2rem;
   align-items: center;
+  padding: 20px;
+}
+
+.bg {
+  background-color: #d8d8d8;
 }
 
 .color-container {
@@ -71,6 +75,7 @@
     display: flex;
     margin-top: 7rem;
     width: 100%;
+    margin-left: 30px;
     
     * {
       overflow: hidden;
@@ -129,11 +134,6 @@
     max-width: 333px;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-  }
-
-  .bg {
-    background-color: #d8d8d8;
   }
 
   .navbutton-boxleft {
@@ -165,7 +165,7 @@
   }
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (min-width: 768px) and (max-width: 1150px) {
   .details-image {
     width: 66%;
     height: 100%;
