@@ -10,6 +10,15 @@
   margin-left: 30px;
 }
 
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  gap: 0.5rem;
+}
+
 .button-container {
   display: flex;
   height: 50px;
@@ -18,7 +27,7 @@
   border-radius: 25px 25px 25px 25px;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .reserve-button {
@@ -31,7 +40,27 @@
   outline: inherit;
 }
 
+.details-model {
+  font-size: 30px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 1rem;
+}
+
+.d-tails-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 2rem;
+  align-items: center;
+}
+
 .color-container {
+  display: none;
+}
+
+.navbutton-boxleft {
   display: none;
 }
 
@@ -40,18 +69,19 @@
     display: flex;
     gap: 10rem;
     margin-left: 3rem;
+    margin-top: 7rem;
   }
 
-  .info-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
+  .button-container {
+    margin-top: 5rem;
   }
 
   .details-model {
     font-size: 30px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 1rem;
   }
 
   .d-tails {
@@ -60,8 +90,9 @@
   }
 
   .details-image {
-    width: 800px;
-    height: 700px;
+    width: 55vw;
+    height: 85vh;
+    margin-left: 10rem;
   }
 
   .color-container {
@@ -74,7 +105,47 @@
   }
 
   .color-wheel {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .d-tails-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 2rem;
+    align-items: center;
+  }
+
+  .bg {
+    background-color: #d8d8d8;
+  }
+
+  .navbutton-boxleft {
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    width: 90px;
+    background-color: #98c00d;
+    border-radius: 0 25px 25px 0;
+    margin-left: 10rem;
+    bottom: 0;
+    margin-bottom: 5rem;
+    position: fixed;
+
+    button {
+      margin-right: 12px;
+      background-image: url('https://i.imgur.com/PKGqNgn.png');
+      background-color: rgba(255, 0, 0, 0);
+      background-size: 15px;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: 0;
+      width: 30px;
+
+      svg {
+        display: none;
+      }
+    }
   }
 }
