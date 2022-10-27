@@ -28,7 +28,7 @@ export default function Details() {
         <div className="info-container">
           <div className="details-model">
             <div>
-              MODEL:
+              Tesla
             </div>
             <div>
               {details.model}
@@ -36,7 +36,7 @@ export default function Details() {
           </div>
           <div className="d-tails-container bg">
             <div className="d-tails">
-              RANGE:
+              Range:
             </div>
             <div className="d-tails">
               {details.range}
@@ -45,7 +45,7 @@ export default function Details() {
           </div>
           <div className="d-tails-container">
             <div className="d-tails">
-              MOTOR:
+              Motor:
             </div>
             <div className="d-tails">
               {details.motor_type}
@@ -62,7 +62,7 @@ export default function Details() {
           </div>
           <div className="d-tails-container">
             <div className="d-tails">
-              PRICE:
+              Price:
             </div>
             <div className="d-tails">
               $
@@ -71,20 +71,16 @@ export default function Details() {
           </div>
           <div className="d-tails-container bg">
             <div className="d-tails">
-              BOOKING:
+              Booking:
             </div>
             <div className="d-tails">
               {details.booking_duration}
               {' '}
-              WEEKS
+              Months
             </div>
           </div>
           <div className="color-container">
-            <p className="color-text">
-              COLOR
-              {' '}
-              PICKER
-            </p>
+            <p className="color-text" />
             <img className="color-wheel" alt="color wheel" src={Color} />
           </div>
           <div className="button-container">

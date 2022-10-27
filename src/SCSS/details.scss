@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import '../assets/base.scss';
 
 .details-image {
   width: 300px;
@@ -14,9 +15,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   font-family: 'Poppins', sans-serif;
-  gap: 0.5rem;
 }
 
 .button-container {
@@ -46,6 +46,7 @@
   justify-content: flex-end;
   width: 100%;
   gap: 1rem;
+  margin-bottom: 15px;
 }
 
 .d-tails-container {
@@ -58,6 +59,7 @@
 
 .color-container {
   display: none;
+  margin-top: 33px;
 }
 
 .navbutton-boxleft {
@@ -67,9 +69,15 @@
 @media only screen and (min-width: 768px) {
   .details-container {
     display: flex;
-    gap: 10rem;
     margin-left: 3rem;
     margin-top: 7rem;
+    width: 100%;
+  }
+
+  .info-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: 75px;
   }
 
   .button-container {
@@ -86,12 +94,10 @@
 
   .d-tails {
     font-size: 15px;
-    color: #202020;
+    color: $text-grey;
   }
 
   .details-image {
-    width: 55vw;
-    height: 85vh;
     margin-left: 10rem;
   }
 
@@ -105,16 +111,17 @@
   }
 
   .color-wheel {
-    width: 100px;
-    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
   }
 
   .d-tails-container {
     display: flex;
     width: 100%;
+    max-width: 333px;
     justify-content: space-between;
-    height: 2rem;
     align-items: center;
+    padding: 20px;
   }
 
   .bg {
