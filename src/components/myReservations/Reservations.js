@@ -21,10 +21,17 @@ const Reservations = () => {
     }
   }, [reservations.length, dispatch]);
 
+  const currentUser = {
+    username: 'admin',
+    id: 1,
+  };
+
+  const userReservations = reservations.filter((res) => res.userId === currentUser.id);
+
   return (
     <section>
       <h1>My Reservations</h1>
-      {reservations.map((res) => (
+      {userReservations.map((res) => (
         <ul key={res.id}>
           <Reservation
             model={cars.find((car) => car.id === res.carId).model}
