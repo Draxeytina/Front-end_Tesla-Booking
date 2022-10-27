@@ -71,11 +71,11 @@ img {
 
   .content {
     position: relative;
+    margin-left: 10rem;
   }
 
   .slides-container {
     padding: 0 30px;
-    width: 50%;
   }
 
   .button-boxright {
@@ -104,10 +104,8 @@ img {
     width: 360px;
     height: 300px;
   }
-}
 
-@media only screen and (max-width: 678px) {
   .slides {
-    display: none;
+    margin-top: 5rem;
   }
 }
