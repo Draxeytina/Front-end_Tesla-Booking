@@ -1,0 +1,76 @@
+@import '../../assets/base.scss';
+
+// *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+// *-*-*-*-*-*-* DESKTOP VERSION *-*-*-*-*-*-*-*
+// *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+#reservation-form {
+  width: 100%;
+  z-index: 2;
+
+  h2 {
+    font-size: 32px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    * {
+      font-size: 14px;
+      width: 75%;
+      max-width: 800px;
+      padding: 12px;
+      border: 1px solid black;
+      border-radius: 5px;
+      background-color: rgb(255, 255, 255);
+    }
+
+    button {
+      font-weight: bold;
+      margin-top: 10px;
+      width: 50%;
+      padding: 20px;
+      border: 0;
+      border-radius: 50px;
+      color: white;
+      background-color: $lime;
+
+      &:hover {
+        background-color: #50bf0f;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+// *-*-*-*-*-*-* MOBILE VERSION -*-*-*-*-*-*-*-*
+// *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+@media (max-width: 768px) {
+  #reservation-form {
+    width: 97vw;
+
+    h2 {
+      font-size: 28px;
+    }
+
+    form {
+      gap: 20px;
+
+      * {
+        font-size: 16px;
+        width: 75%;
+        padding: 18px;
+      }
+
+      button {
+        width: 75%;
+        padding: 18px;
+      }
+    }
+  }
+}

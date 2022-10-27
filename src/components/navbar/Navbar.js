@@ -28,7 +28,7 @@ function Navbar() {
           <img src={Tesla} alt="Tesla garage logo" />
           <NavLink to="/" className={navbarLink} onClick={toggle}>Models</NavLink>
           <NavLink to="/reserve" className={navbarLink} onClick={toggle}>Reserve</NavLink>
-          <NavLink to="/users/:id/reserved_cars" className={navbarLink} onClick={toggle}>My Reservations</NavLink>
+          <NavLink to="/reservations" className={navbarLink} onClick={toggle}>My Reservations</NavLink>
           <NavLink to="/new" className={navbarLink} onClick={toggle}>New</NavLink>
           <NavLink to="/delete" className={navbarLink} onClick={toggle}>Delete</NavLink>
         </div>
