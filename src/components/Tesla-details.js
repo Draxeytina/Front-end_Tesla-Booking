@@ -83,9 +83,11 @@ export default function Details() {
             <p className="color-text" />
             <img className="color-wheel" alt="color wheel" src={Color} />
           </div>
-          <div className="button-container">
-            <Link to="/reservations/create"><button type="button" className="reserve-button">Reserve</button></Link>
-          </div>
+          <Link to="/reservations/create">
+            <button type="button" className="button-container">
+              <div className="reserve-button">Reserve</div>
+            </button>
+          </Link>
         </div>
       </div>
       <div className="navbutton-boxleft">

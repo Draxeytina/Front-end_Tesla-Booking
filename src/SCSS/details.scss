@@ -4,17 +4,19 @@
 .details-image {
   width: 300px;
   height: 280px;
+  margin-left: 5%;
 }
 
 .details-container {
   width: 90%;
+  margin-left: 5%;
 }
 
 .info-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -27,6 +29,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
+  cursor: pointer;
 }
 
 .reserve-button {
@@ -76,7 +79,7 @@
     margin-top: 7rem;
     width: 100%;
     margin-left: 30px;
-    
+
     * {
       overflow: hidden;
     }
