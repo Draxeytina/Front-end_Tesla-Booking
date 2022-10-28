@@ -12,7 +12,6 @@ import Details from './components/Tesla-details';
 // import './App.css';
 // import './App.scss';
 
-
 function App() {
   return (
     <div className="App">
@@ -26,7 +25,7 @@ function App() {
             <Route path="/reservations" element={<Reservations />} />
             <Route path="/reserve" element={<ReserveForm />} />
             {/* <Route path="/cars/create" element={<New />} /> */}
-            <Route path="/cars/:id" element={<Delete />} />
+            <Route path="/cars/:id" element={<Details />} />
             {/* <Route path="/*" element={<Navigate to="/" replace />} /> */}
           </>
         </Routes>
