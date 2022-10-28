@@ -12,9 +12,9 @@ const Reserve = () => {
 
   const deleteCar = async (e) => {
     e.preventDefault();
-    const response = await fetch(`'http://127.0.0.1:3000/cars/${e.target.id}`, {
+    const response = await fetch(`http://127.0.0.1:3000/cars/${e.target.id}`, {
       method: 'DELETE',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { Accept: '*/*', 'Content-Type': 'application/json' },
     });
     response.json();
     if (response.status === 200) {
@@ -33,7 +33,7 @@ const Reserve = () => {
 
   return (
     <section id="reservation-form">
-      <h2> RESERVATION FORM </h2>
+      <h2> DELETE FORM </h2>
       <form onSubmit={(e) => { deleteCar(e); }}>
         <select name="model" id="reservation-form__model" form="reserve-car">
           {formOptions()}
