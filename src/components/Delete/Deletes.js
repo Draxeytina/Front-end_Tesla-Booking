@@ -12,7 +12,8 @@ const Reserve = () => {
 
   const deleteCar = async (e) => {
     e.preventDefault();
-    const response = await fetch(`http://127.0.0.1:3000/cars/${e.target.id}`, {
+    const carID = document.getElementById('reservation-form__model').value;
+    const response = await fetch(`http://127.0.0.1:3000/cars/${carID}`, {
       method: 'DELETE',
       headers: { Accept: '*/*', 'Content-Type': 'application/json' },
     });
