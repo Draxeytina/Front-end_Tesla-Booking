@@ -1,3 +1,4 @@
+/* stylelint-disable */
 @import '../../assets/base.scss';
 
 h2 {
@@ -14,6 +15,7 @@ li {
   padding: 0;
   border: 1px $lime solid;
   border-radius: 30px;
+
   @include box-shadow(0, 0, 5px, 5px, transparentize($lime, 0.7));
 }
 
@@ -55,5 +57,4 @@ li p {
     margin: 5px;
     padding: 0 35px;
   }
-  
 }
