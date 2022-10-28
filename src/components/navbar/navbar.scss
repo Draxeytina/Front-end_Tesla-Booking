@@ -2,7 +2,7 @@
 
 nav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 160px; /* Set the width of the sidebar */
+  width: 200px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -27,8 +27,11 @@ small {
 }
 
 nav img {
-  margin: 10px 0;
+  margin: 0 auto;
+  margin-bottom: 22px;
   width: 100%;
+  max-width: 200px;
+  height: auto;
 }
 
 nav.green {
@@ -65,6 +68,9 @@ nav.green {
 
 .burger-div {
   display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
 }
 
 .social-icons {
@@ -87,8 +93,8 @@ nav.green {
   nav {
     position: fixed;
     background-color: white;
-    max-width: 71vw;
-    height: 100vh;
+    width: 66%;
+    height: 100%;
     overflow: hidden auto;
     box-shadow: 0 0 500px 100px $lime;
     z-index: 100;
