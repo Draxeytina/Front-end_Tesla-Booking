@@ -1,6 +1,18 @@
 import TextField from '@mui/material/TextField';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import './Adds.scss';
+
+const theme = createTheme({
+  palette: {
+    neutral: {
+      light: '#50bf0f',
+      main: '#97bf0f',
+      dark: '#50bf0f',
+      contrastText: '#fff',
+    },
+  },
+});
 
 export default function Adds() {
   const handleSubmit = async (e) => {
@@ -130,7 +142,9 @@ export default function Adds() {
           />
         </div>
         <div>
-          <Button type="submit" variant="contained" color="primary">Submit</Button>
+          <ThemeProvider theme={theme}>
+            <Button type="submit" variant="contained" color="neutral">Submit</Button>
+          </ThemeProvider>
         </div>
       </form>
     </div>

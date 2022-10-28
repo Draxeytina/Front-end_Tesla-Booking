@@ -26,7 +26,7 @@ function Navbar() {
       <nav className={`${changeClass(hidden)}`}>
         <div className="side-bar">
           <img src={Tesla} alt="Tesla garage logo" />
-          <NavLink to="/" className={navbarLink} onClick={toggle}>Models</NavLink>
+          <NavLink to="/home" className={navbarLink} onClick={toggle}>Models</NavLink>
           <NavLink to="/reserve" className={navbarLink} onClick={toggle}>Reserve</NavLink>
           <NavLink to="/reservations" className={navbarLink} onClick={toggle}>My Reservations</NavLink>
           <NavLink to="/new" className={navbarLink} onClick={toggle}>New</NavLink>
