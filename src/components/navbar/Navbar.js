@@ -7,7 +7,7 @@ import {
   faGithub,
   faLinkedin,
 } from '@fortawesome/free-brands-svg-icons';
-import Tesla from '../../assets/Tesla.png';
+import Tesla from '../../assets/Fondo-tesla.png';
 import './navbar.scss';
 
 function Navbar() {
