@@ -20,6 +20,7 @@ function App() {
         <Routes>
           <>
             <Route exact path="/" element={<Home />} />
+            <Route exact path="/home" element={<Home />} />
             <Route exact path="/new" element={<Adds />} />
             <Route exact path="/delete" element={<Deletes />} />
             <Route path="/reservations" element={<Reservations />} />
