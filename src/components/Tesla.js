@@ -53,9 +53,12 @@ export default function Tesla() {
       <div className="slides-container">
         <Slider ref={setSlide} {...sliderSettings}>
           {cars.map((car, index) => (
-            <div key={index}>
+            <div key={index} className="slide-box">
               <Link to={`/cars/${car.id}`}><img alt={car.model} src={car.image} /></Link>
               <h2 className="car-name">{car.model}</h2>
+              <div className="description">
+                <h5>{car.description}</h5>
+              </div>
               <div className="icons">
                 <FontAwesomeIcon icon={faSquareFacebook} />
                 <FontAwesomeIcon icon={faSquareTwitter} />

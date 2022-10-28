@@ -52,12 +52,25 @@
   display: flex;
   justify-content: center;
   gap: 3rem;
-  margin-top: 4rem;
+  margin-top: 0;
 }
 
 img {
   width: 360px;
   height: 300px;
+  margin-left: 1rem;
+}
+
+h5 {
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: 3rem;
+}
+
+.description {
+  width: 20rem;
+  height: 5rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -71,7 +84,7 @@ img {
 
   .content {
     position: relative;
-    margin-left: 10rem;
+    margin-left: 12rem;
   }
 
   .slides-container {
@@ -103,9 +116,31 @@ img {
   img {
     width: 360px;
     height: 300px;
+    margin-left: 5rem;
   }
 
   .slides {
     margin-top: 5rem;
+  }
+
+  h5 {
+    text-align: center;
+    padding-left: 5rem;
+    margin-left: 6rem;
+    padding-right: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .description {
+    width: 20rem;
+    height: 5rem;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 4rem;
   }
 }
