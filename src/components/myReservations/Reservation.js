@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Reservation = ({
   model, bookingDate, id,
 }) => (
-  <li id={id} className="row pill list">
+  <li id={id} className="list-item">
     <p>{model}</p>
     <p>{bookingDate}</p>
   </li>
