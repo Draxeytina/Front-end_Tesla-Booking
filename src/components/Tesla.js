@@ -6,11 +6,12 @@ import Slider from 'react-slick';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowCircleLeft, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
 import { faSquareFacebook, faSquareTwitter, faSquareInstagram } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 import { getCars } from '../redux/cars/cars';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-export default function Telsa() {
+export default function Tesla() {
   const [slide, setSlide] = useState('');
   const cars = useSelector((state) => state.cars);
 
@@ -53,7 +54,7 @@ export default function Telsa() {
         <Slider ref={setSlide} {...sliderSettings}>
           {cars.map((car, index) => (
             <div key={index}>
-              <img alt={car.model} src={car.image} width="360" height="300" />
+              <Link to={`/cars/${car.id}`}><img alt={car.model} src={car.image} /></Link>
               <h2 className="car-name">{car.model}</h2>
               <div className="icons">
                 <FontAwesomeIcon icon={faSquareFacebook} />

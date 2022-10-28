@@ -8,8 +8,10 @@ import ReserveForm from './components/Reserve Form/ReserveForm';
 import Home from './components/Home';
 import Adds from './components/Adds/Adds';
 import Deletes from './components/Delete/Deletes';
-import './App.css';
-import './App.scss';
+import Details from './components/Tesla-details';
+// import './App.css';
+// import './App.scss';
+
 
 function App() {
   return (
@@ -24,7 +26,7 @@ function App() {
             <Route path="/reservations" element={<Reservations />} />
             <Route path="/reserve" element={<ReserveForm />} />
             {/* <Route path="/cars/create" element={<New />} /> */}
-            {/* <Route path="/cars/:id" element={<Delete />} /> */}
+            <Route path="/cars/:id" element={<Delete />} />
             {/* <Route path="/*" element={<Navigate to="/" replace />} /> */}
           </>
         </Routes>

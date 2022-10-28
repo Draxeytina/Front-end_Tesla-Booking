@@ -42,6 +42,11 @@ function Navbar() {
           <small>&copy; Tesla Booking 2022</small>
         </footer>
       </nav>
+      {/* <div className="navbutton-boxleft">
+        <button type="button">
+          <FontAwesomeIcon icon={faArrowCircleLeft} />
+        </button>
+      </div> */}
     </>
   );
 }

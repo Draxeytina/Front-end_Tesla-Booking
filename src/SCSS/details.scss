@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import '../assets/base.scss';
+
+.details-image {
+  width: 300px;
+  height: 280px;
+  margin-left: 5%;
+}
+
+.details-container {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.button-container {
+  display: flex;
+  height: 50px;
+  width: 10rem;
+  border: 0;
+  background-color: #98c00d;
+  border-radius: 25px 25px 25px 25px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.reserve-button {
+  background: none;
+  color: white;
+  border: none;
+  padding: 0;
+  font: inherit;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.details-model {
+  font-size: 30px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 1rem;
+  margin-bottom: 15px;
+}
+
+.d-tails-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 2rem;
+  align-items: center;
+  padding: 20px;
+}
+
+.bg {
+  background-color: #d8d8d8;
+}
+
+.color-container {
+  display: none;
+  margin-top: 33px;
+}
+
+.navbutton-boxleft {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .details-container {
+    display: flex;
+    margin-top: 7rem;
+    width: 100%;
+    margin-left: 30px;
+
+    * {
+      overflow: hidden;
+    }
+  }
+
+  .info-container {
+    width: 100%;
+    max-width: 333px;
+    margin-left: 25px;
+    margin-right: 75px;
+    align-self: flex-start;
+  }
+
+  .button-container {
+    margin-top: 5rem;
+  }
+
+  .details-model {
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .d-tails {
+    font-size: 15px;
+    color: $text-grey;
+  }
+
+  .details-image {
+    margin-left: 10rem;
+    width: 100%;
+    height: auto;
+    margin-top: -75px;
+  }
+
+  .color-container {
+    display: flex;
+  }
+
+  .color-text {
+    align-self: center;
+    color: #202020;
+  }
+
+  .color-wheel {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  .d-tails-container {
+    display: flex;
+    width: 100%;
+    max-width: 333px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbutton-boxleft {
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    width: 90px;
+    background-color: #98c00d;
+    border-radius: 0 25px 25px 0;
+    margin-left: 10rem;
+    bottom: 0;
+    margin-bottom: 5rem;
+    position: fixed;
+
+    button {
+      margin-right: 12px;
+      background-image: url('https://i.imgur.com/PKGqNgn.png');
+      background-color: rgba(255, 0, 0, 0);
+      background-size: 15px;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: 0;
+      width: 30px;
+
+      svg {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1150px) {
+  .details-image {
+    width: 66%;
+    height: 100%;
+    align-self: center;
+  }
+
+  .info-container {
+    width: 25%;
+
+    * {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
