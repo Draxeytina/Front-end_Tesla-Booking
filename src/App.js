@@ -7,6 +7,7 @@ import Reservations from './components/myReservations/Reservations';
 import ReserveForm from './components/Reserve Form/ReserveForm';
 import Home from './components/Home';
 import Adds from './components/Adds/Adds';
+import Deletes from './components/Delete/Deletes';
 import './App.css';
 import './App.scss';
 
@@ -18,7 +19,8 @@ function App() {
         <Routes>
           <>
             <Route exact path="/" element={<Home />} />
-            <Route exact path="/cars/create" element={<Adds />} />
+            <Route exact path="/new" element={<Adds />} />
+            <Route exact path="/delete" element={<Deletes />} />
             <Route path="/reservations" element={<Reservations />} />
             <Route path="/reserve" element={<ReserveForm />} />
             {/* <Route path="/cars/create" element={<New />} /> */}
