@@ -9,8 +9,6 @@ import Home from './components/Home';
 import Adds from './components/Adds/Adds';
 import Deletes from './components/Delete/Deletes';
 import Details from './components/Tesla-details';
-// import './App.css';
-// import './App.scss';
 
 function App() {
   return (
