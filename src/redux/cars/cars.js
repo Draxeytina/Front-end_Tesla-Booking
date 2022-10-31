@@ -12,6 +12,7 @@ function getCars() {
         id: car.id,
         model: car.model,
         image: car.image,
+        description: car.description,
       };
       cars.push(newCar);
     });

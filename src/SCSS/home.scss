@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   font-family: 'Poppins', sans-serif;
+  margin-left: 200px;
 }
 
 .arrows {
@@ -43,6 +44,17 @@
   }
 }
 
+.sub-heading {
+  margin-top: -20px;
+}
+
+.slide-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .car-name {
   display: flex;
   justify-content: center;
@@ -52,12 +64,43 @@
   display: flex;
   justify-content: center;
   gap: 3rem;
-  margin-top: 4rem;
+  margin-top: 0;
+  color: #eaeaea;
+  font-size: 10px;
+}
+
+.icon-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-style: solid;
+  border-width: 2.5px;
+  border-radius: 50px;
 }
 
 img {
   width: 360px;
   height: 300px;
+  margin: 0 auto;
+}
+
+p {
+  color: #c4c4c4;
+}
+
+h5 {
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: #c4c4c4;
+}
+
+.dots {
+  text-align: center;
+  color: #eaeaea;
+  font-size: 25px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -71,7 +114,7 @@ img {
 
   .content {
     position: relative;
-    margin-left: 10rem;
+    margin-left: 12rem;
   }
 
   .slides-container {
@@ -96,10 +139,6 @@ img {
     border-radius: 0 25px 25px 0;
   }
 
-  p {
-    color: #c4c4c4;
-  }
-
   img {
     width: 360px;
     height: 300px;
@@ -107,5 +146,31 @@ img {
 
   .slides {
     margin-top: 5rem;
+  }
+
+  h5 {
+    text-align: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    color: #c4c4c4;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    gap: 3rem;
+  }
+
+  .slide-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .car-link {
+    overflow: hidden;
+    cursor: pointer;
   }
 }

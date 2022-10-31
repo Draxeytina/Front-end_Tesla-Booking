@@ -7,10 +7,10 @@ const Home = () => (
   <div>
     <div className="heading-container">
       <div>
-        <h2>MODELS</h2>
+        <h2>LATEST MODELS</h2>
       </div>
-      <div>
-        <p>PLEASE SELECT A TESLA MODEL</p>
+      <div className="sub-heading">
+        <p>Please select a Tesla Model</p>
       </div>
     </div>
     <div className="slides">
