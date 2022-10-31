@@ -2,6 +2,8 @@
 
 import React, { Component } from 'react';
 import axios from 'axios';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 
 export default class Login extends Component {
   constructor(props) {
@@ -49,14 +51,18 @@ export default class Login extends Component {
 
   render() {
     return (
-      <div>
+      <>
+        <Container className="p-3">
+    <Jumbotron>
+    <Form.Group className="mb-3" controlId="formBasicEmail">
         <form onSubmit={this.handleSubmit}>
-          <input type="email" name="email" placeholder="Email" value={this.state.email} onChange={this.handleChange} required />
-          <input type="password" name="password" placeholder="Password" value={this.state.password} onChange={this.handleChange} required />
-          <button type="submit">Login</button>
+        <Form.Label>Email address</Form.Label>   <input type="email" name="email" id="email" placeholder="Email" value={this.state.email} onChange={this.handleChange} required />
+        <Form.Label>Password </Form.Label>       <input type="password" name="password" id="password" placeholder="Password" value={this.state.password} onChange={this.handleChange} required />
         </form>
-
-      </div>
+        </Form.Group>
+        </Jumbotron>
+        </Container>
+      </>
     );
   }
 }
