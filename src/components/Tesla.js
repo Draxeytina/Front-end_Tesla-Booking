@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import Slider from 'react-slick';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowCircleLeft, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
-import { faSquareFacebook, faSquareTwitter, faSquareInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 import { getCars } from '../redux/cars/cars';
 import 'slick-carousel/slick/slick.css';
@@ -35,13 +35,13 @@ export default function Tesla() {
         },
       },
       {
-        breakpoint: 1024,
+        breakpoint: 1500,
         settings: {
           slidesToShow: 2,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 1090,
         settings: {
           slidesToShow: 1,
         },
@@ -54,15 +54,27 @@ export default function Tesla() {
         <Slider ref={setSlide} {...sliderSettings}>
           {cars.map((car, index) => (
             <div key={index} className="slide-box">
-              <Link to={`/cars/${car.id}`}><img alt={car.model} src={car.image} /></Link>
-              <h2 className="car-name">{car.model}</h2>
+              <Link to={`/cars/${car.id}`} className="car-link"><img alt={car.model} src={car.image} /></Link>
+              <h2 className="car-name">
+                {' '}
+                TESLA
+                {' '}
+                {car.model}
+              </h2>
+              <p className="dots">....................</p>
               <div className="description">
                 <h5>{car.description}</h5>
               </div>
               <div className="icons">
-                <FontAwesomeIcon icon={faSquareFacebook} />
-                <FontAwesomeIcon icon={faSquareTwitter} />
-                <FontAwesomeIcon icon={faSquareInstagram} />
+                <div className="icon-border">
+                  <FontAwesomeIcon icon={faFacebookF} />
+                </div>
+                <div className="icon-border">
+                  <FontAwesomeIcon icon={faTwitter} />
+                </div>
+                <div className="icon-border">
+                  <FontAwesomeIcon icon={faInstagram} />
+                </div>
               </div>
             </div>
           ))}
