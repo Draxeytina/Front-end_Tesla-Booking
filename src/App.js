@@ -9,8 +9,6 @@ import Home from './components/Home';
 import Adds from './components/Adds/Adds';
 import Deletes from './components/Delete/Deletes';
 import Details from './components/Tesla-details';
-// import './App.css';
-// import './App.scss';
 
 function App() {
   return (
@@ -19,7 +17,6 @@ function App() {
         <Navbar />
         <Routes>
           <>
-            <Route exact path="/" element={<Home />} />
             <Route exact path="/home" element={<Home />} />
             <Route exact path="/new" element={<Adds />} />
             <Route exact path="/delete" element={<Deletes />} />
