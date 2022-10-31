@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   font-family: 'Poppins', sans-serif;
+  margin-left: 200px;
 }
 
 .arrows {
@@ -82,7 +83,7 @@
 img {
   width: 360px;
   height: 300px;
-  margin-left: 1rem;
+  margin: 0 auto;
 }
 
 p {
@@ -95,11 +96,6 @@ h5 {
   padding-right: 2rem;
   color: #c4c4c4;
 }
-
-// .description {
-//   width: 20rem;
-//   height: 5rem;
-// }
 
 .dots {
   text-align: center;
@@ -146,7 +142,6 @@ h5 {
   img {
     width: 360px;
     height: 300px;
-    margin-left: 5rem;
   }
 
   .slides {
@@ -159,11 +154,6 @@ h5 {
     padding-right: 3rem;
     color: #c4c4c4;
   }
-
-  // .description {
-  //   width: 20rem;
-  //   height: 5rem;
-  // }
 
   .icons {
     display: flex;
