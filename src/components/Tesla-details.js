@@ -12,9 +12,7 @@ import { getCardetails } from '../redux/cars/car-details';
 
 export default function Details() {
   const details = useSelector((state) => state.details);
-  console.log(details);
   const params = useParams();
-  console.log(params);
 
   const dispatch = useDispatch();
 
@@ -83,7 +81,7 @@ export default function Details() {
             <p className="color-text" />
             <img className="color-wheel" alt="color wheel" src={Color} />
           </div>
-          <Link to="/reservations/create">
+          <Link to="/reserve">
             <button type="button" className="button-container">
               <div className="reserve-button">Reserve</div>
             </button>

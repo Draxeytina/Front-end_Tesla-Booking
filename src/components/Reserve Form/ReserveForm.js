@@ -4,11 +4,13 @@ import { getCars } from '../../redux/cars/cars';
 import { reserveCarThunk } from '../../redux/reserveCarThunk';
 import './reserveForm.scss';
 
-const Reserve = () => {
+const Reserve = (props) => {
   const dispatch = useDispatch();
   const carsData = useSelector((state) => state.cars);
   const date = new Date();
   const today = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
+  const data = props;
+  const { user } = data;
 
   useEffect(() => {
     dispatch(getCars());
@@ -19,10 +21,12 @@ const Reserve = () => {
     const carID = document.getElementById('reservation-form__model').value;
     const reservation = {
       car_id: carID,
-      user_id: 1,
+      user_id: user.id,
       booking_date: e.target.reservationDate.value,
     };
     dispatch(reserveCarThunk(reservation));
+    document.getElementById('reservation-form__booking-date').value = '';
+    window.location.reload(false);
   };
 
   const formOptions = () => {
