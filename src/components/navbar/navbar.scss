@@ -87,6 +87,10 @@ nav.green {
   column-gap: 20px;
   color: $dark-grey;
   width: 100%;
+
+  a {
+    color: $dark-grey;
+  }
 }
 
 .link.wrap {
