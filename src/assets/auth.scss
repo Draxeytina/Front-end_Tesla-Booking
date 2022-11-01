@@ -1,0 +1,138 @@
+@import "./base";
+
+.auth-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-image:
+    linear-gradient(to left, #000a, #0003),
+    url("https://images5.alphacoders.com/114/1142015.png");
+  background-size: cover;
+}
+
+.auth-form {
+  $blur: 2px;
+
+  background: rgba(255, 255, 255, 0.11);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.33);
+
+  @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    & {
+      backdrop-filter: blur($blur);
+      -webkit-backdrop-filter: blur($blur);
+    }
+  }
+
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  max-width: 75vw;
+  max-height: 75vh;
+  min-width: 50vw;
+  min-height: 50vh;
+  align-items: center;
+  justify-content: start;
+  // border: 1px solid red;
+
+  .auth-group {
+    margin: 1rem auto;
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+    input[type="email"],
+    input[type="password"] {
+      color: #fff;
+      background-color: #000;
+      border-style: hidden;
+      padding: 8px;
+      border-radius: 10px;
+      border-width: 0;
+      font-size: 16px;
+    }
+
+    input[type="email"]:focus,
+    input[type="password"]:focus {
+      outline: none;
+      border-color: #ccc;
+      color: #fff;
+      background-color: #000;
+      border-style: hidden;
+      padding: 8px;
+      border-radius: 10px;
+      border-width: 0;
+      font-size: 16px;
+    }
+  }
+
+  .auth-email-group {
+    margin-top: 88px;
+  }
+
+  .auth-email-group2 {
+    margin-top: 66px;
+  }
+
+  .auth-button {
+    border-style: none;
+    color: white;
+    padding: 0.5rem;
+    background-color: green;
+    font-size: 1.8rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: all 0.2s;
+  }
+
+  .auth-button:hover {
+    background-color: rgb(1, 177, 1);
+    transform: scale(1.1);
+  }
+}
+
+#login-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#toggleLogin {
+  top: 66%;
+  position: absolute;
+  border-style: none;
+  color: white;
+  padding: 0.5rem;
+  background-color: green;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: rgb(1, 177, 1);
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 768px) {
+  .auth-form {
+    .auth-group {
+      transform: translate(-20%);
+    }
+
+    .auth-email-group2 {
+      margin-top: 22px;
+    }
+  }
+}

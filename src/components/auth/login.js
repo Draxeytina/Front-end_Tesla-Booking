@@ -2,6 +2,8 @@
 
 import React, { Component } from 'react';
 import axios from 'axios';
+import '../../assets/auth.scss'
+import { Link } from 'react-router-dom';
 
 export default class Login extends Component {
   constructor(props) {
@@ -49,14 +51,15 @@ export default class Login extends Component {
 
   render() {
     return (
-      <div>
-        <form onSubmit={this.handleSubmit}>
-          <input type="email" name="email" placeholder="Email" value={this.state.email} onChange={this.handleChange} required />
-          <input type="password" name="password" placeholder="Password" value={this.state.password} onChange={this.handleChange} required />
-          <button type="submit">Login</button>
-        </form>
-
-      </div>
+      <form className="auth-form" onSubmit={this.handleSubmit}>
+        <div className='auth-group auth-email-group'>
+          <input type="email" id="email"  name="email" placeholder="Email" value={this.state.email} onChange={this.handleChange} required />
+        </div>
+        <div className='auth-group auth-password-group'>
+          <input type="password" id="password" name="password" placeholder="Password" value={this.state.password} onChange={this.handleChange} required />
+        </div>
+          <button className='auth-button' type="submit">Login</button>
+      </form>
     );
   }
 }

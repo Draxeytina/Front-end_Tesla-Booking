@@ -13,7 +13,8 @@ import ErrorPage from './components/ErrorPage';
 
 function Components(props) {
   const data = props;
-  const { admin, handleLogout } = data;
+  const { user, handleLogout } = data;
+  const { admin } = user;
 
   return (
     <div className="App">
@@ -28,9 +29,12 @@ function Components(props) {
                 <Route exact path="/delete" element={<Deletes />} />
               </>
             )
-            : <></>}
-          <Route path="/reservations" element={<Reservations />} />
-          <Route path="/reserve" element={<ReserveForm />} />
+            : (
+              <>
+              </>
+            )}
+          <Route path="/reservations" element={<Reservations user={user} />} />
+          <Route path="/reserve" element={<ReserveForm user={user} />} />
           <Route path="/cars/:id" element={<Details />} />
           <Route path="*" element={<ErrorPage />} />
         </>

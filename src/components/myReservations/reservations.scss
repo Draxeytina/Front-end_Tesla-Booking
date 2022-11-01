@@ -38,6 +38,11 @@ li p {
   padding: 0 30px;
 }
 
+.padding {
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 768px) {
   ul {
     padding: 0;
