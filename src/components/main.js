@@ -9,11 +9,14 @@ import '../assets/auth.scss'
 
 // export default class Home extends Component {
 export class Main extends Component {
-  constructor(props) {
+    constructor(props) {
     super(props);
+
+    this.displayLogin = true;
 
     this.handleSuccessfulAuth = this.handleSuccessfulAuth.bind(this);
     this.handleLogoutClick = this.handleLogoutClick.bind(this);
+    this.toggleSignUp = this.toggleSignUp.bind(this);
   }
 
   handleSuccessfulAuth(data) {
@@ -31,7 +34,13 @@ export class Main extends Component {
       });
   }
 
+  toggleSignUp() {
+    this.displayLogin = !this.displayLogin
+    this.forceUpdate()
+  }
+
   render() {
+
     return (
       <div>
         {/* <h1>Home</h1> */}
@@ -42,11 +51,23 @@ export class Main extends Component {
         </h2> */}
         {/* <button onClick={() => this.handleLogoutClick()}>LogOut</button> */}
         <div className='auth-container'>
-
-        {/* <Registration handleSuccessfulAuth={this.handleSuccessfulAuth} /> */}
-        <Login handleSuccessfulAuth={this.handleSuccessfulAuth} />
+        { 
+          this.displayLogin
+          ? (
+          <div id="login-box">
+            <Login handleSuccessfulAuth={this.handleSuccessfulAuth} />
+            {<button id="toggleLogin" onClick={() => this.toggleSignUp()}>Sign up</button> }
+          </div>
+            )
+          : (
+          <div id="login-box">
+            <Registration handleSuccessfulAuth={this.handleSuccessfulAuth} />
+            {<button id="toggleLogin"  onClick={() => this.toggleSignUp()}>Login</button> }
+          </div>
+          )
+        }
         </div>
-
+        
       </div>
     );
   }

@@ -40,7 +40,7 @@
   min-width: 50vw;
   min-height: 50vh;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   // border: 1px solid red;
 
   .auth-group {
@@ -48,7 +48,7 @@
     width: 30rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 3rem;
 
     input[type="email"],
@@ -76,6 +76,14 @@
     }
   }
 
+  .auth-email-group {
+    margin-top: 88px;
+  }
+
+  .auth-email-group2 {
+    margin-top: 66px;
+  }
+
   .auth-button {
     border-style: none;
     color: white;
@@ -90,5 +98,41 @@
   .auth-button:hover {
     background-color: rgb(1, 177, 1);
     transform: scale(1.1);
+  }
+}
+
+#login-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#toggleLogin {
+  top: 66%;
+  position: absolute;
+  border-style: none;
+  color: white;
+  padding: 0.5rem;
+  background-color: green;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: rgb(1, 177, 1);
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 768px) {
+  .auth-form {
+    .auth-group {
+      transform: translate(-20%);
+    }
+
+    .auth-email-group2 {
+      margin-top: 22px;
+    }
   }
 }

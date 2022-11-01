@@ -29,7 +29,10 @@ function Components(props) {
                 <Route exact path="/delete" element={<Deletes />} />
               </>
             )
-            : <></>}
+            : (
+              <>
+              </>
+            )}
           <Route path="/reservations" element={<Reservations user={user} />} />
           <Route path="/reserve" element={<ReserveForm user={user} />} />
           <Route path="/cars/:id" element={<Details />} />
