@@ -7,7 +7,7 @@ import Login from './auth/login';
 import { withRouter } from './withrouter';
 
 // export default class Home extends Component {
-class Main extends Component {
+export class Main extends Component {
   constructor(props) {
     super(props);
 
@@ -17,13 +17,14 @@ class Main extends Component {
 
   handleSuccessfulAuth(data) {
     this.props.handleLogin(data);
-    this.props.navigate('/dashboard');
+    this.props.navigate('/home');
   }
 
-  handleLogoutClick() {
+  handleLogoutClick(handleLogout) {
     axios.delete('http://localhost:3000/logout', { withCredentials: true })
       .then((response) => {
-        this.props.handleLogout();
+        handleLogout ?? this.props.handleLogout()
+        window.location.reload(false);
       }).catch((error) => {
         console.log('logout error', error);
       });
