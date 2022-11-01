@@ -21,8 +21,14 @@ function Components(props) {
       <Routes>
         <>
           <Route exact path="/home" element={<Home />} />
-          <Route exact path="/new" element={<Adds />} />
-          <Route exact path="/delete" element={<Deletes />} />
+          { admin
+            ? (
+              <>
+                <Route exact path="/new" element={<Adds />} />
+                <Route exact path="/delete" element={<Deletes />} />
+              </>
+            )
+            : <></>}
           <Route path="/reservations" element={<Reservations />} />
           <Route path="/reserve" element={<ReserveForm />} />
           <Route path="/cars/:id" element={<Details />} />
