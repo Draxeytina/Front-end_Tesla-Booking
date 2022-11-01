@@ -8,6 +8,14 @@
 - SQL
 
 ## Screenshots:
+  ### Login
+  ![image](https://user-images.githubusercontent.com/42799579/199345103-4c72224f-8a4b-4650-a15d-584b4c8ed9c4.png)
+  ### Navbar
+  ![image](https://user-images.githubusercontent.com/42799579/199346064-29e04774-0c50-4cf9-91b4-7a2fa59643a8.png)
+  ### Homepage
+  ![image](https://user-images.githubusercontent.com/42799579/199345950-47fb39b9-b4a6-4216-b47b-ee99abbc6ab3.png)
+  ### Tesla details
+  ![image](https://user-images.githubusercontent.com/42799579/199346557-3303a89b-5346-4a3c-b79a-da1f301fee3a.png)
   
 ## Project back-end
 [Back-end](https://github.com/Draxeytina/Back-end_Tesla-Booking)
