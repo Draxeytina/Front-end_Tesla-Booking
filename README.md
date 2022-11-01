@@ -46,6 +46,14 @@ To edit this project:
 
 - LinkedIn: [Francisco Borja](https://www.linkedin.com/in/francisco-borja-lobato/)
 
+## 👤 Waqas Ahmad
+
+- GitHub: [@waqaskanju](https://github.com/waqaskanu)
+
+- Twitter: [@waqaskanju](https://twitter.com/waqaskanju)
+
+- LinkedIn: [Waqas Kanju](https://www.linkedin.com/in/waqaskanju/)
+
 ## :star2: Show your support 
 Give a :star: if you like my project! 
 
