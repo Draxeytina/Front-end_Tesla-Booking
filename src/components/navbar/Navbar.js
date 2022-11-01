@@ -9,8 +9,12 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import Tesla from '../../assets/Fondo-tesla.png';
 import './navbar.scss';
+import { Main } from '../main';
 
-function Navbar() {
+function Navbar(props) {
+  const data = props;
+  const { admin, handleLogout } = data;
+  const main = new Main();
   const [hidden, setHidden] = useState(true);
   const toggle = () => setHidden(!hidden);
   const changeClass = (hidden) => (hidden ? 'hidden green' : 'white');
@@ -29,8 +33,18 @@ function Navbar() {
           <NavLink to="/home" className={navbarLink} onClick={toggle}>Models</NavLink>
           <NavLink to="/reserve" className={navbarLink} onClick={toggle}>Reserve</NavLink>
           <NavLink to="/reservations" className={navbarLink} onClick={toggle}>My Reservations</NavLink>
-          <NavLink to="/new" className={navbarLink} onClick={toggle}>New</NavLink>
-          <NavLink to="/delete" className={navbarLink} onClick={toggle}>Delete</NavLink>
+          {admin
+            ? (
+              <>
+                <NavLink to="/new" className={navbarLink} onClick={toggle}>New</NavLink>
+                <NavLink to="/delete" className={navbarLink} onClick={toggle}>Delete</NavLink>
+              </>
+            )
+            : (
+              <>
+              </>
+            )}
+          <button type="button" className={navbarLink} onClick={() => main.handleLogoutClick(handleLogout)}>Logout</button>
         </div>
         <footer>
           <div className="social-icons">
