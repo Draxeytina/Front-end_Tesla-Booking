@@ -5,10 +5,12 @@ import { getReservations } from '../../redux/reservations/reservations';
 import Reservation from './Reservation';
 import './reservations.scss';
 
-const Reservations = () => {
+const Reservations = (props) => {
   const dispatch = useDispatch();
   const cars = useSelector((state) => state.cars);
   const reservations = useSelector((state) => state.reservations);
+  const data = props;
+  const { user } = data;
 
   useEffect(() => {
     if (cars.length === 0) {
@@ -22,12 +24,7 @@ const Reservations = () => {
     }
   }, [reservations.length, dispatch]);
 
-  const currentUser = {
-    username: 'admin',
-    id: 1,
-  };
-
-  const userReservations = reservations.filter((res) => res.userId === currentUser.id);
+  const userReservations = reservations.filter((res) => res.userId === user.id ?? 1);
 
   return (
     <section className="my-reservations-wrap">
