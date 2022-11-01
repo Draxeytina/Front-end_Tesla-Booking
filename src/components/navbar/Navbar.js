@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -6,6 +7,7 @@ import {
   faTwitter,
   faGithub,
   faLinkedin,
+  faAngellist,
 } from '@fortawesome/free-brands-svg-icons';
 import Tesla from '../../assets/Fondo-tesla.png';
 import './navbar.scss';
@@ -48,10 +50,11 @@ function Navbar(props) {
         </div>
         <footer>
           <div className="social-icons">
-            <FontAwesomeIcon icon={faFacebookF} />
-            <FontAwesomeIcon icon={faTwitter} />
-            <FontAwesomeIcon icon={faGithub} />
-            <FontAwesomeIcon icon={faLinkedin} />
+            <a href="https://github.com/Draxeytina/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faFacebookF} /></a>
+            <a href="https://github.com/waqaskanju" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTwitter} /></a>
+            <a href="https://github.com/Gopxfs" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
+            <a href="https://github.com/franclobo" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a>
+            <a href="https://github.com/fibini" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faAngellist} /></a>
           </div>
           <small>&copy; Tesla Booking 2022</small>
         </footer>
