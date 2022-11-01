@@ -54,8 +54,14 @@ To edit this project:
 
 - LinkedIn: [Waqas Kanju](https://www.linkedin.com/in/waqaskanju/)
 
+  ## acknowledgement
+  This project's [design](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign) was inspired by [Murat Korkmaz](https://www.behance.net/muratk) under [Creative Commons License](https://creativecommons.org/licenses/).
+
+  
 ## :star2: Show your support 
 Give a :star: if you like my project! 
 
 ## :pencil: License
 This project is [MIT](https://github.com/Gopxfs/Back-end_Tesla-Booking/blob/main/LICENSE) licensed. 
+  
+  
