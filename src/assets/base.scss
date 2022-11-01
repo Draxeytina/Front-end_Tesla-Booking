@@ -1,0 +1,35 @@
+/* stylelint-disable */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+$lime: #97bf0f;
+$grey: #efefef;
+$dark-grey: #8c8c8c;
+$red: #c12828;
+$text-grey: #2c2c2c;
+$heading-font: 'Poppins', sans-serif;
+
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font;
+}
+
+@mixin box-shadow($top, $left, $blur, $spread, $color) {
+  -webkit-box-shadow: $top $left $blur $spread $color;
+  -moz-box-shadow: $top $left $blur $spread $color;
+  box-shadow: $top $left $blur $spread $color;
+}

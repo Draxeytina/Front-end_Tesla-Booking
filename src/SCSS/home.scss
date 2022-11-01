@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.arrows {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+
+  .button-boxleft,
+  .button-boxright {
+    button {
+      background-color: rgba(255, 0, 0, 0);
+      background-size: 15px;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: 0;
+      width: 30px;
+
+      svg {
+        display: none;
+      }
+    }
+  }
+
+  .button-boxleft {
+    button {
+      margin-right: 12px;
+      background-image: url('https://i.imgur.com/PKGqNgn.png');
+    }
+  }
+
+  .button-boxright {
+    button {
+      margin-left: 12px;
+      background-image: url('https://i.imgur.com/BCjKg6S.png');
+    }
+  }
+}
+
+.sub-heading {
+  margin-top: -20px;
+}
+
+.slide-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.car-name {
+  display: flex;
+  justify-content: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 0;
+  color: #eaeaea;
+  font-size: 10px;
+}
+
+.icon-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-style: solid;
+  border-width: 2.5px;
+  border-radius: 50px;
+}
+
+img {
+  width: 360px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+p {
+  color: #c4c4c4;
+}
+
+h5 {
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: #c4c4c4;
+}
+
+.dots {
+  text-align: center;
+  color: #eaeaea;
+  font-size: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+  .heading-container {
+    margin-left: 200px;
+  }
+
+  .arrows {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+  }
+
+  .content {
+    position: relative;
+    margin-left: 12rem;
+  }
+
+  .slides-container {
+    padding: 0 30px;
+  }
+
+  .button-boxright {
+    display: flex;
+    justify-content: flex-start;
+    height: 50px;
+    width: 90px;
+    background-color: #98c00d;
+    border-radius: 25px 0 0 25px;
+  }
+
+  .button-boxleft {
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    width: 90px;
+    background-color: #98c00d;
+    border-radius: 0 25px 25px 0;
+  }
+
+  img {
+    width: 360px;
+    height: 300px;
+  }
+
+  .slides {
+    margin-top: 5rem;
+  }
+
+  h5 {
+    text-align: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    color: #c4c4c4;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    gap: 3rem;
+  }
+
+  .slide-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .car-link {
+    overflow: hidden;
+    cursor: pointer;
+  }
+}
