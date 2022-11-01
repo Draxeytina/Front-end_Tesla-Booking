@@ -59,7 +59,7 @@ export default class Login extends Component {
           <label for="email">Password</label>
           <input type="password" id="password" name="password" placeholder="Password" value={this.state.password} onChange={this.handleChange} required />
           </div>
-          <button type="submit">Login</button>
+          <button className='auth-button' type="submit">Login</button>
         </form>
 
     );
