@@ -50,16 +50,19 @@ export default class Registration extends Component {
 
   render() {
     return (
-      <div>
-        <form onSubmit={this.handleSubmit}>
+        <form className="auth-form" onSubmit={this.handleSubmit}>
+        <div className='auth-group auth-email-group2'>
           <input type="email" name="email" placeholder="Email" value={this.state.email} onChange={this.handleChange} required />
+         </div>
+         <div className='auth-group auth-password-group'>
           <input type="password" name="password" placeholder="Password" value={this.state.password} onChange={this.handleChange} required />
+          </div>
+          
+          <div className='auth-group auth-password-group'>
           <input type="password" name="password_confirmation" placeholder="Password Confirmation" value={this.state.password_confirmation} onChange={this.handleChange} required />
-
-          <button type="submit">Registor</button>
+          </div>
+          <button className='auth-button' type="submit">Sign Up</button>
         </form>
-
-      </div>
     );
   }
 }
