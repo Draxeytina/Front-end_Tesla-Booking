@@ -65,15 +65,9 @@ export default class App extends Component {
 
       <div className="app">
         <BrowserRouter>
-        { this.state.loggedInStatus == 'LOGGED_IN' ? <Components admin={this.state.user.admin} handleLogout={this.handleLogout}/> : <Main handleLogin={this.handleLogin} handleLogout={this.handleLogout} loggedInStatus={this.state.loggedInStatus} /> }
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <Main handleLogin={this.handleLogin} handleLogout={this.handleLogout} loggedInStatus={this.state.loggedInStatus} />
-}
-            />
-          </Routes>
+          { this.state.loggedInStatus == 'LOGGED_IN'
+          ? <Components admin={this.state.user.admin} handleLogout={this.handleLogout}/>
+          : <Main handleLogin={this.handleLogin} handleLogout={this.handleLogout} loggedInStatus={this.state.loggedInStatus} /> }
         </BrowserRouter>
       </div>
     );

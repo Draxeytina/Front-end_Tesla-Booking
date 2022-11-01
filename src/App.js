@@ -9,6 +9,7 @@ import Home from './components/Home';
 import Adds from './components/Adds/Adds';
 import Deletes from './components/Delete/Deletes';
 import Details from './components/Tesla-details';
+import ErrorPage from './components/ErrorPage';
 
 function Components(props) {
   const data = props;
@@ -24,9 +25,8 @@ function Components(props) {
           <Route exact path="/delete" element={<Deletes />} />
           <Route path="/reservations" element={<Reservations />} />
           <Route path="/reserve" element={<ReserveForm />} />
-          {/* <Route path="/cars/create" element={<New />} /> */}
           <Route path="/cars/:id" element={<Details />} />
-          {/* <Route path="/*" element={<Navigate to="/" replace />} /> */}
+          <Route path="*" element={<ErrorPage />} />
         </>
       </Routes>
     </div>
