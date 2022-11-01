@@ -74,6 +74,9 @@ To edit this project:
 - Twitter: [![Twitter Badge](https://img.shields.io/badge/-waqaskanju1-white?logo=Twitter&logoColor=1DA1F2&style=plastic)](https://twitter.com/waqaskanju)
 - LinkedIn: [![LinkedIn Badge](https://img.shields.io/badge/-WaqasKanju-white?logo=LinkedIn&logoColor=1DA1F2&style=plastic)](https://linkedin.com/in/waqaskanju)
 
+## Acknowledgments
+This project's [design](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign) was inspired by [Murat Korkmaz](https://www.behance.net/muratk) under [Creative Commons License](https://creativecommons.org/licenses/).
+
 ## :star2: Show your support 
 Give a :star: if you like my project! 
 
