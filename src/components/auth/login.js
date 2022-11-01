@@ -50,18 +50,18 @@ export default class Login extends Component {
 
   render() {
     return (
-        <form className="auth-form" onSubmit={this.handleSubmit}>
-         <div className='auth-group auth-email-group'>
-          <label for="email">Email</label>
-          <input type="email" id="email"  name="email" placeholder="Email" value={this.state.email} onChange={this.handleChange} required />
-          </div>
-          <div className='auth-group auth-password-group'>
-          <label for="email">Password</label>
-          <input type="password" id="password" name="password" placeholder="Password" value={this.state.password} onChange={this.handleChange} required />
-          </div>
-          <button className='auth-button' type="submit">Login</button>
-        </form>
-
+    <form className="auth-form" onSubmit={this.handleSubmit}>
+      <div className='auth-group auth-email-group'>
+        <label for="email">Email</label>
+        <input type="email" id="email"  name="email" placeholder="Email" value={this.state.email} onChange={this.handleChange} required />
+      </div>
+      <div className='auth-group auth-password-group'>
+        <label for="email">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password" value={this.state.password} onChange={this.handleChange} required />
+      </div>
+        <button className='auth-button' type="submit">Login</button>
+    </form>
+    // here
     );
   }
 }
