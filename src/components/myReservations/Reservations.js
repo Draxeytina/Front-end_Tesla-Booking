@@ -25,7 +25,6 @@ const Reservations = (props) => {
   }, [reservations.length, dispatch]);
 
   const userReservations = reservations.filter((res) => res.userId === user.id ?? 1);
-  console.log(userReservations);
 
   return (
     <section className="my-reservations-wrap">
