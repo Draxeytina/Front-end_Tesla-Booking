@@ -5,6 +5,7 @@ import axios from 'axios';
 import Registration from './auth/registration';
 import Login from './auth/login';
 import { withRouter } from './withrouter';
+import '../assets/auth.scss'
 
 // export default class Home extends Component {
 export class Main extends Component {
@@ -33,15 +34,18 @@ export class Main extends Component {
   render() {
     return (
       <div>
-        <h1>Home</h1>
-        <h1>
+        {/* <h1>Home</h1> */}
+        {/* <h2>
           {' '}
           Status:
           {this.props.loggedInStatus}
-        </h1>
-        <button onClick={() => this.handleLogoutClick()}>LogOut</button>
-        <Registration handleSuccessfulAuth={this.handleSuccessfulAuth} />
+        </h2> */}
+        {/* <button onClick={() => this.handleLogoutClick()}>LogOut</button> */}
+        <div className='auth-container'>
+
+        {/* <Registration handleSuccessfulAuth={this.handleSuccessfulAuth} /> */}
         <Login handleSuccessfulAuth={this.handleSuccessfulAuth} />
+        </div>
 
       </div>
     );
