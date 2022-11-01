@@ -53,6 +53,13 @@ To edit this project:
 - Twitter: [![Twitter Badge](https://img.shields.io/badge/-Onenewpage1-white?logo=Twitter&logoColor=1DA1F2&style=plastic)](https://twitter.com/Onenewpage1)
 
 - LinkedIn: [![LinkedIn Badge](https://img.shields.io/badge/-FabienBrathwaite-white?logo=LinkedIn&logoColor=1DA1F2&style=plastic)](https://www.linkedin.com/in/fabien-brathwaite/)
+
+👤 **Tinashe Timothy Murambinda**
+
+- <a href="https://github.com/Draxeytina/">Github</a>
+- <a href="https://twitter.com/tinamura2">Twitter</a>
+- <a href="https://www.linkedin.com/in/timothy-tinashe-murambinda/">LinkedIn</a>
+
 ## :star2: Show your support 
 Give a :star: if you like my project! 
 
