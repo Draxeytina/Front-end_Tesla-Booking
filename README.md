@@ -54,7 +54,7 @@ To edit this project:
 
 - LinkedIn: [Waqas Kanju](https://www.linkedin.com/in/waqaskanju/)
 
-  ## acknowledgement
+## Acknowledgement
   This project's [design](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign) was inspired by [Murat Korkmaz](https://www.behance.net/muratk) under [Creative Commons License](https://creativecommons.org/licenses/).
 
   
