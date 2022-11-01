@@ -43,8 +43,8 @@ export class Main extends Component {
         {/* <button onClick={() => this.handleLogoutClick()}>LogOut</button> */}
         <div className='auth-container'>
 
-        <Registration handleSuccessfulAuth={this.handleSuccessfulAuth} />
-        {/* <Login handleSuccessfulAuth={this.handleSuccessfulAuth} /> */}
+        {/* <Registration handleSuccessfulAuth={this.handleSuccessfulAuth} /> */}
+        <Login handleSuccessfulAuth={this.handleSuccessfulAuth} />
         </div>
 
       </div>
