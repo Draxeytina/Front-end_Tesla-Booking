@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import axios from 'axios';
 import Main from './main';
-import Dashboard from './dashboard';
+import Components from '../App';
 
 export default class App extends Component {
   constructor() {
@@ -65,18 +65,9 @@ export default class App extends Component {
 
       <div className="app">
         <BrowserRouter>
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <Main handleLogin={this.handleLogin} handleLogout={this.handleLogout} loggedInStatus={this.state.loggedInStatus} />
-}
-            />
-            <Route
-              path="/dashboard"
-              element={<Dashboard loggedInStatus={this.state.loggedInStatus} />}
-            />
-          </Routes>
+          { this.state.loggedInStatus == 'LOGGED_IN'
+          ? <Components admin={this.state.user.admin} handleLogout={this.handleLogout}/>
+          : <Main handleLogin={this.handleLogin} handleLogout={this.handleLogout} loggedInStatus={this.state.loggedInStatus} /> }
         </BrowserRouter>
       </div>
     );

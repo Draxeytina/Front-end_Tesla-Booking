@@ -43,6 +43,14 @@ nav.green {
   flex-direction: column;
   text-align: left;
   margin-left: 1rem;
+
+  button {
+    border: 0;
+    background: 0;
+    text-align: start;
+    font-size: 15px;
+    cursor: pointer;
+  }
 }
 
 .link {
