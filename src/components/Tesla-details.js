@@ -12,7 +12,6 @@ import { getCardetails } from '../redux/cars/car-details';
 
 export default function Details() {
   const details = useSelector((state) => state.details);
-  console.log(details);
   const params = useParams();
 
   const dispatch = useDispatch();
