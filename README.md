@@ -81,4 +81,4 @@ This project's [design](https://www.behance.net/gallery/26425031/Vespa-Responsiv
 Give a :star: if you like my project! 
 
 ## :pencil: License
-This project is [MIT](https://github.com/Gopxfs/Back-end_Tesla-Booking/blob/main/LICENSE) licensed. 
+This project is [MIT](https://github.com/Gopxfs/Front-end_Tesla-Booking/blob/main/LICENSE) licensed. 
