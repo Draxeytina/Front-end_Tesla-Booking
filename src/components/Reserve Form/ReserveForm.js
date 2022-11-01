@@ -26,6 +26,7 @@ const Reserve = (props) => {
     };
     dispatch(reserveCarThunk(reservation));
     document.getElementById('reservation-form__booking-date').value = '';
+    window.location.reload(false);
   };
 
   const formOptions = () => {
