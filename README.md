@@ -77,14 +77,6 @@ To edit this project:
 ## Acknowledgments
 This project's [design](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign) was inspired by [Murat Korkmaz](https://www.behance.net/muratk) under [Creative Commons License](https://creativecommons.org/licenses/).
 
-## 👤 Waqas Ahmad
-
-- GitHub: [@waqaskanju](https://github.com/waqaskanu)
-
-- Twitter: [@waqaskanju](https://twitter.com/waqaskanju)
-
-- LinkedIn: [Waqas Kanju](https://www.linkedin.com/in/waqaskanju/)
-
 ## Acknowledgement
   This project's [design](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign) was inspired by [Murat Korkmaz](https://www.behance.net/muratk) under [Creative Commons License](https://creativecommons.org/licenses/).
 
