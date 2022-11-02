@@ -8,12 +8,19 @@ import { withRouter } from './withrouter';
 import '../assets/auth.scss'
 
 // export default class Home extends Component {
+//  This is the main page which combine both login and signup components.
+
 export class Main extends Component {
+
+  // calling the constructor
+
     constructor(props) {
     super(props);
 
     this.displayLogin = true;
 
+    //  bindnig the successfulAuth logout and signup
+    
     this.handleSuccessfulAuth = this.handleSuccessfulAuth.bind(this);
     this.handleLogoutClick = this.handleLogoutClick.bind(this);
     this.toggleSignUp = this.toggleSignUp.bind(this);
