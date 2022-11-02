@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getCars } from '../../redux/cars/cars';
 
-const Reserve = () => {
+const Deletes = () => {
   const dispatch = useDispatch();
   const carsData = useSelector((state) => state.cars);
 
@@ -45,4 +45,4 @@ const Reserve = () => {
   );
 };
 
-export default Reserve;
+export default Deletes;

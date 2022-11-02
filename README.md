@@ -22,19 +22,19 @@
 
 ## Getting Started 
 - To get a local copy of this project clone this repository or download the Zip folder: 
-git clone https://github.com/Draxeytina/Back-end_Tesla-Booking.git 
+git clone git@github.com:Draxeytina/Front-end_Tesla-Booking.git 
 
-- To get started, In the root directory run: 
-gem install bundler 
+- To get started run: 
+`npm i` 
 
 - Then run: 
-bundle install 
+`npm start`
 
-- Run ruby server in the Command Line: 
-rails s  
+- Run the tests with: 
+`npm test`
 
 - Open the server page on your browser: 
-Localhost:3000 
+Localhost:3001
 
 ### Usage 
 To edit this project:

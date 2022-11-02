@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test components Deletes component 1`] = `
+<section
+  id="reservation-form"
+>
+  <h2>
+     DELETE FORM 
+  </h2>
+  <form
+    onSubmit={[Function]}
+  >
+    <select
+      form="reserve-car"
+      id="reservation-form__model"
+      name="model"
+    />
+    <button
+      type="submit"
+    >
+      DELETE
+    </button>
+  </form>
+</section>
+`;
+
+exports[`Test components Reserve component 1`] = `
+<section
+  id="reservation-form"
+>
+  <h2>
+     RESERVATION FORM 
+  </h2>
+  <form
+    onSubmit={[Function]}
+  >
+    <select
+      form="reserve-car"
+      id="reservation-form__model"
+      name="model"
+    />
+    <input
+      id="reservation-form__booking-date"
+      max="2030-12-31"
+      min="2022-11-1"
+      name="reservationDate"
+      required={true}
+      type="date"
+    />
+    <button
+      type="submit"
+    >
+      RESERVE
+    </button>
+  </form>
+</section>
+`;
