@@ -58,14 +58,18 @@ export class Main extends Component {
       <div>
         <div className='auth-container'>
         { 
+        // Tertiary operation.
+
           this.displayLogin
           ? (
-          <div id="login-box">
+        // THe Signup  component.
+        <div id="login-box">
             <Login handleSuccessfulAuth={this.handleSuccessfulAuth} />
             {<button id="toggleLogin" onClick={() => this.toggleSignUp()}>Sign up</button> }
           </div>
             )
           : (
+          //  THe Login component
           <div id="login-box">
             <Registration handleSuccessfulAuth={this.handleSuccessfulAuth} />
             {<button id="toggleLogin"  onClick={() => this.toggleSignUp()}>Login</button> }
