@@ -26,11 +26,15 @@ export default class Registration extends Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
+  //  the acutal handlechange function. 
+
   handleChange(event) {
     this.setState({
       [event.target.name]: event.target.value,
     });
   }
+
+  // the actual handle submit function.
 
   handleSubmit(event) {
     const {
@@ -38,6 +42,9 @@ export default class Registration extends Component {
       password,
       password_confirmation,
     } = this.state;
+
+    // calling the api registrations route. 
+
     axios.post('http://localhost:3000/registrations', {
       user: {
         email,
@@ -46,7 +53,12 @@ export default class Registration extends Component {
       },
     },
 
+    // send the session data also.
+
     { withCredentials: true }).then((response) => {
+
+       
+
       if (response.data.status === 'created') {
         this.props.handleSuccessfulAuth(response.data);
       }
