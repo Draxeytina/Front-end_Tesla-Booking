@@ -3,9 +3,14 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+//  class for signup page.
 export default class Registration extends Component {
+  
+  // calling the constructor
   constructor(props) {
     super(props);
+
+    // initially the state will be empty
     this.state = {
       email: '',
       password: '',
