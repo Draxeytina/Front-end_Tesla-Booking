@@ -1,4 +1,4 @@
-const resAPI = 'http://127.0.0.1:3000/reservations';
+const resAPI = 'https://secret-ridge-50120.herokuapp.com/reservations';
 
 const FETCH_RESERVATIONS = 'redux/reservations/reservations/FETCH_RESERVATIONS';
 

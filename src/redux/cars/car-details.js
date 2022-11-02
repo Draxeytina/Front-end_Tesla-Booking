@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 
-const carsAPI = 'http://127.0.0.1:3000/cars/';
+const carsAPI = 'https://secret-ridge-50120.herokuapp.com/cars/';
 
 const GET_DETAILS = 'redux/cars/car-details';
 
