@@ -20,16 +20,20 @@ export class Main extends Component {
     this.displayLogin = true;
 
     //  bindnig the successfulAuth logout and signup
-    
+
     this.handleSuccessfulAuth = this.handleSuccessfulAuth.bind(this);
     this.handleLogoutClick = this.handleLogoutClick.bind(this);
     this.toggleSignUp = this.toggleSignUp.bind(this);
   }
 
+  // Acutal successful auth function.
+
   handleSuccessfulAuth(data) {
     this.props.handleLogin(data);
     this.props.navigate('/home');
   }
+
+  // calling the logout function.
 
   handleLogoutClick(handleLogout) {
     axios.delete('http://localhost:3000/logout', { withCredentials: true })
