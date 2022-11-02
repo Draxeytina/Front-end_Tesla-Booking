@@ -36,7 +36,7 @@ export class Main extends Component {
   // calling the logout function.
 
   handleLogoutClick(handleLogout) {
-    axios.delete('http://localhost:3000/logout', { withCredentials: true })
+    axios.delete('https://secret-ridge-50120.herokuapp.com/logout', { withCredentials: true })
       .then((response) => {
         handleLogout ?? this.props.handleLogout()
         window.location.reload(false);

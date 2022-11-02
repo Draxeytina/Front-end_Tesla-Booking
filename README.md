@@ -7,6 +7,9 @@
 - SCSS 
 - SQL
 
+## Live demo:
+[Tesla Booking](https://deploy-preview-39--deft-cat-7c3d23.netlify.app/)
+
 ## Screenshots:
   ### Login
   ![image](https://user-images.githubusercontent.com/42799579/199345103-4c72224f-8a4b-4650-a15d-584b4c8ed9c4.png)
@@ -34,7 +37,7 @@ git clone git@github.com:Draxeytina/Front-end_Tesla-Booking.git
 `npm test`
 
 - Open the server page on your browser: 
-Localhost:3001
+https://secret-ridge-50120.herokuapp.com
 
 ### Usage 
 To edit this project:
