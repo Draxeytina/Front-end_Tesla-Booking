@@ -46,7 +46,7 @@ export class Main extends Component {
   }
 
   //  show and hide signin signup
-  
+
   toggleSignUp() {
     this.displayLogin = !this.displayLogin
     this.forceUpdate()
@@ -56,13 +56,6 @@ export class Main extends Component {
 
     return (
       <div>
-        {/* <h1>Home</h1> */}
-        {/* <h2>
-          {' '}
-          Status:
-          {this.props.loggedInStatus}
-        </h2> */}
-        {/* <button onClick={() => this.handleLogoutClick()}>LogOut</button> */}
         <div className='auth-container'>
         { 
           this.displayLogin
