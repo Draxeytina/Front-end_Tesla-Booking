@@ -57,13 +57,16 @@ export default class Registration extends Component {
 
     { withCredentials: true }).then((response) => {
 
-       
+    // if the response status is created then send the data to props  
 
       if (response.data.status === 'created') {
         this.props.handleSuccessfulAuth(response.data);
       }
     })
       .catch((error) => {
+
+        // show erros in console
+
         console.log('Registion error', error);
       });
 
