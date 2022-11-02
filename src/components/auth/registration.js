@@ -17,7 +17,12 @@ export default class Registration extends Component {
       password_confirmation: '',
       registrationsErrors: '',
     };
+
+    //  binding handlesubmit to form
     this.handleSubmit = this.handleSubmit.bind(this);
+
+    //  binding handle change to form
+
     this.handleChange = this.handleChange.bind(this);
   }
 
