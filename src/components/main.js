@@ -45,6 +45,8 @@ export class Main extends Component {
       });
   }
 
+  //  show and hide signin signup
+  
   toggleSignUp() {
     this.displayLogin = !this.displayLogin
     this.forceUpdate()
