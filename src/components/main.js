@@ -83,4 +83,6 @@ export class Main extends Component {
   }
 }
 
+// This with router is used for switing page in Class base component.
+
 export default withRouter(Main);
