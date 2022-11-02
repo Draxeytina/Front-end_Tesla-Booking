@@ -70,9 +70,12 @@ export default class Registration extends Component {
         console.log('Registion error', error);
       });
 
+    //  do not allow not from submission.
+
     event.preventDefault();
   }
 
+  // the singup form.
   render() {
     return (
         <form className="auth-form" onSubmit={this.handleSubmit}>
