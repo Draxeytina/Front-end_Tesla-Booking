@@ -2,12 +2,10 @@ import { Provider } from 'react-redux';
 import { MemoryRouter } from 'react-router-dom';
 import renderer from 'react-test-renderer';
 import configureStore from '../redux/configureStore';
-import Adds from '../components/Adds/Adds';
-import Reserve from '../components/Reserve Form/ReserveForm';
-import Deletes from '../components/Delete/Deletes';
+import Reserve from './Reserve Form/ReserveForm';
+import Deletes from './Delete/Deletes';
 
 describe('Test components', () => {
-
   test('Reserve component', () => {
     const store = configureStore;
     const component = renderer.create(
