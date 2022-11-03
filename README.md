@@ -17,6 +17,16 @@
   ### Tesla details
   ![image](https://user-images.githubusercontent.com/42799579/199346557-3303a89b-5346-4a3c-b79a-da1f301fee3a.png)
   
+## Kanban Board
+[Link to project's Kanban Board](https://github.com/users/Draxeytina/projects/4)
+
+![Initial Kanban Board](https://user-images.githubusercontent.com/42799579/196807680-4828e314-9168-45b8-81d2-aa554a273a4c.png)
+
+### Team Members
+
+We are a team of 5 members:
+@fibini	@franclobo	@Gopxfs	@Draxeytina	@waqaskanju
+  
 ## Project back-end
 [Back-end](https://github.com/Draxeytina/Back-end_Tesla-Booking)
 
@@ -76,11 +86,7 @@ To edit this project:
 
 ## Acknowledgments
 This project's [design](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign) was inspired by [Murat Korkmaz](https://www.behance.net/muratk) under [Creative Commons License](https://creativecommons.org/licenses/).
-
-## Acknowledgement
-  This project's [design](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign) was inspired by [Murat Korkmaz](https://www.behance.net/muratk) under [Creative Commons License](https://creativecommons.org/licenses/).
-
-  
+ 
 ## :star2: Show your support 
 Give a :star: if you like my project! 
 
