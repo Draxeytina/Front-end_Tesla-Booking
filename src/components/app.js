@@ -64,6 +64,7 @@ export default class App extends Component {
     return (
 
       <div className="app">
+        {/* for going to component and main parts */}
         <BrowserRouter>
           { this.state.loggedInStatus == 'LOGGED_IN'
           ? <Components user={this.state.user} handleLogout={this.handleLogout}/>
