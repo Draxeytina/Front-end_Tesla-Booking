@@ -1,4 +1,4 @@
-const resAPI = 'https://secret-ridge-50120.herokuapp.com/reservations';
+const resAPI = 'https://tealsbranch.herokuapp.com/reservations';
 
 const FETCH_RESERVATIONS = 'redux/reservations/reservations/FETCH_RESERVATIONS';
 

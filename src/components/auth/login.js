@@ -50,7 +50,7 @@ export default class Login extends Component {
 
     //  calling the api session route from port 3000
 
-    axios.post('https://secret-ridge-50120.herokuapp.com/sessions', {
+    axios.post('https://tealsbranch.herokuapp.com/sessions', {
       user: {
         email,
         password,
@@ -59,7 +59,7 @@ export default class Login extends Component {
 
     // for handling sesssion.
 
-    { withCredentials: true }).then((response) => {
+    { withCredentials: false }).then((response) => {
      
     //  if in the server response if loggedin is true.
     //  send the reponse data to handle succesful Auth

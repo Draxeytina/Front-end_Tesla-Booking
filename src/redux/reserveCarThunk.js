@@ -1,6 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-const baseURL = 'https://secret-ridge-50120.herokuapp.com/reservations/create';
+const baseURL = 'https://tealsbranch.herokuapp.com/reservations/create';
 
 export const reserveCarThunk = createAsyncThunk(
   'reserve-form/reserve-car',

@@ -1,4 +1,4 @@
-const carsAPI = 'https://secret-ridge-50120.herokuapp.com/cars';
+const carsAPI = 'https://tealsbranch.herokuapp.com/cars';
 
 const GET_CARS = 'redux/cars/cars/GET_CARS';
 

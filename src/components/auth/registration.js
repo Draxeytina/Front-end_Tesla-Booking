@@ -45,7 +45,7 @@ export default class Registration extends Component {
 
     // calling the api registrations route. 
 
-    axios.post('https://secret-ridge-50120.herokuapp.com/registrations', {
+    axios.post('https://tealsbranch.herokuapp.com/registrations', {
       user: {
         email,
         password,
@@ -55,7 +55,7 @@ export default class Registration extends Component {
 
     // send the session data also.
 
-    { withCredentials: true }).then((response) => {
+    { withCredentials: false }).then((response) => {
 
     // if the response status is created then send the data to props  
 
