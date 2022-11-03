@@ -17,7 +17,7 @@ const theme = createTheme({
 export default function Adds() {
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch('https://tealsbranch.herokuapp.com/cars/create', {
+    const response = await fetch('https://secret-ridge-50120.herokuapp.com/cars/create', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({

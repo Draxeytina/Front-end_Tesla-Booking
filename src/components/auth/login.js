@@ -50,7 +50,7 @@ export default class Login extends Component {
 
     //  calling the api session route from port 3000
 
-    axios.post('https://tealsbranch.herokuapp.com/sessions', {
+    axios.post('https://secret-ridge-50120.herokuapp.com/sessions', {
       user: {
         email,
         password,

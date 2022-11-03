@@ -45,7 +45,7 @@ export default class Registration extends Component {
 
     // calling the api registrations route. 
 
-    axios.post('https://tealsbranch.herokuapp.com/registrations', {
+    axios.post('https://secret-ridge-50120.herokuapp.com/registrations', {
       user: {
         email,
         password,

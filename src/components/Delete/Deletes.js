@@ -13,7 +13,7 @@ const Deletes = () => {
   const deleteCar = async (e) => {
     e.preventDefault();
     const carID = document.getElementById('reservation-form__model').value;
-    const response = await fetch(`https://tealsbranch.herokuapp.com/cars/${carID}`, {
+    const response = await fetch(`https://secret-ridge-50120.herokuapp.com/cars/${carID}`, {
       method: 'DELETE',
       headers: { Accept: '*/*', 'Content-Type': 'application/json' },
     });
