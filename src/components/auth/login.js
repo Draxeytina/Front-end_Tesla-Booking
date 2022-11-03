@@ -57,8 +57,6 @@ export default class Login extends Component {
       },
     },
 
-    // for handling sesssion.
-
     { withCredentials: true }).then((response) => {
      
     //  if in the server response if loggedin is true.
