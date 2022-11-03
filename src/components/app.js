@@ -38,7 +38,7 @@ export default class App extends Component {
 
   checkLoginStatus() {
     axios.get('https://tealsbranch.herokuapp.com/logged_in', {
-      withCredentials: false,
+      withCredentials: true,
     }).then((response) => {
       if (response.data.logged_in && this.state.loggedInStatus === 'NOT_LOGGED_IN') {
         this.setState({

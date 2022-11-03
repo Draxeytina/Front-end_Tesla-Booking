@@ -55,7 +55,7 @@ export default class Registration extends Component {
 
     // send the session data also.
 
-    { withCredentials: false }).then((response) => {
+    { withCredentials: true }).then((response) => {
 
     // if the response status is created then send the data to props  
 
