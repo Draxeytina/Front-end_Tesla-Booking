@@ -7,7 +7,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons';
 import '../SCSS/details.scss';
 import { Link } from 'react-router-dom';
-import Color from './images/color.png';
 import { getCardetails } from '../redux/cars/car-details';
 
 export default function Details() {
@@ -79,7 +78,7 @@ export default function Details() {
           </div>
           <div className="color-container">
             <p className="color-text" />
-            <img className="color-wheel" alt="color wheel" src={Color} />
+            <img className="color-wheel" alt="color wheel" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Colorwheel.svg/1200px-Colorwheel.svg.png" />
           </div>
           <Link to="/reserve">
             <button type="button" className="button-container">
