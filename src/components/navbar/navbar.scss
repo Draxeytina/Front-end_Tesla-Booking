@@ -1,0 +1,190 @@
+@import '../../assets/base.scss';
+
+nav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 200px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+footer {
+  margin: 2rem 0;
+  position: fixed;
+  width: inherit;
+  row-gap: 5px;
+  bottom: 0;
+}
+
+small {
+  font-size: small;
+  color: $dark-grey;
+  margin-left: 2.5rem;
+}
+
+nav img {
+  margin: 0 auto;
+  margin-bottom: 22px;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+nav.green {
+  background-color: #fff;
+}
+
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 1rem;
+
+  button {
+    border: 0;
+    background: 0;
+    text-align: start;
+    font-size: 15px;
+    cursor: pointer;
+  }
+}
+
+.link {
+  color: $text-grey;
+  font-family: $heading-font;
+}
+
+.side-bar .link {
+  border-radius: 0;
+  margin-bottom: 0.25rem;
+}
+
+.active,
+.green {
+  background-color: $lime;
+  color: white;
+}
+
+.white {
+  background-color: white;
+  color: $lime;
+}
+
+.burger-div {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  color: $dark-grey;
+  width: 100%;
+
+  a {
+    color: $dark-grey;
+  }
+}
+
+.link.wrap {
+  padding: 0.5rem 1rem;
+}
+
+.link.red {
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  nav {
+    position: fixed;
+    background-color: white;
+    width: 66%;
+    height: 100%;
+    overflow: hidden auto;
+    box-shadow: 0 0 500px 100px $lime;
+    z-index: 100;
+    transition: all 0.5s ease-in-out;
+  }
+
+  small {
+    font-size: small;
+    color: $dark-grey;
+    margin-left: 1.5rem;
+  }
+
+  nav img {
+    margin-bottom: 10px;
+    margin-left: 57px;
+    width: 50%;
+    height: 50%;
+    padding-top: 49px;
+  }
+
+  footer {
+    margin: 2rem 0 0 0;
+    position: absolute;
+  }
+
+  nav.hidden {
+    box-shadow: none;
+    width: 0;
+  }
+
+  .side-bar {
+    margin-left: 1rem;
+  }
+
+  .side-bar .link {
+    margin-bottom: -0.5rem;
+  }
+
+  .burger-div {
+    display: block;
+    position: fixed;
+    border: none;
+    z-index: 150;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 60%;
+  }
+
+  .burger {
+    display: block;
+    margin: 0.25rem;
+    width: 2rem;
+    height: 5px;
+    border-radius: 5px;
+    background-color: $dark-grey;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .hidden .burger.top {
+    transform: rotate(45deg) translate(7px, 5px) skew(50deg) scale(1.3, 0.7);
+    background-color: #fff;
+  }
+
+  .invisible {
+    background-color: transparent;
+  }
+
+  .hidden .burger.bottom {
+    transform: rotate(-45deg) translate(7px, -5px) skew(50deg) scale(1.3, 0.7);
+    background-color: #fff;
+  }
+
+  .social-icons {
+    color: $dark-grey;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: 22px;
+  }
+}
