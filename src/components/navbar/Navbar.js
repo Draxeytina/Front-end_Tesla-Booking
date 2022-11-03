@@ -13,6 +13,8 @@ import Tesla from '../../assets/Fondo-tesla.png';
 import './navbar.scss';
 import { Main } from '../main';
 
+// THe navbar of our app.
+
 function Navbar(props) {
   const data = props;
   const { admin, handleLogout } = data;
