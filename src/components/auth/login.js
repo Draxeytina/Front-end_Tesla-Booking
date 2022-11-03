@@ -37,7 +37,7 @@ export default class Login extends Component {
     });
   }
 
-  //  The submission mechanism of the form.
+  //  The submission mechanism of the form. sending event.
   handleSubmit(event) {
 
     //  get email and password from the state.
